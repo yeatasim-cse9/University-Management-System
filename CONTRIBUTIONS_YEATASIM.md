@@ -51,4 +51,4 @@ I was responsible for the schema design and query optimization.
 *   **Standardization**: Enforced code standards (e.g., naming conventions, directory structure) that allowed 5 other developers to work simultaneously without file conflicts.
 
 ---
-**Technical Keywords**: Singleton Pattern, RBAC Middleware, CSRF Tokens, SQL Injection Prevention, Complex JOINs, JSON Data Storage, Recursive Sanitization.
+**Technical Keywords**: Singleton Pattern, Role-Wise Access Middleware, CSRF Tokens, SQL Injection Prevention, Complex JOINs, JSON Data Storage, Recursive Sanitization.
