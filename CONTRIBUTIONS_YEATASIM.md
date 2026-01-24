@@ -18,7 +18,7 @@ I designed the system to be modular and scalable, moving away from flat PHP stru
 
 ## � 2. Advanced Security & Authentication
 I built the entire security layer from scratch, moving beyond simple login checks to enterprise-grade protection.
-*   **Role-Based Access Control (RBAC) Middleware**:
+*   **Role-Wise Access Middleware**:
     *   Developed `require_role($roles)` middleware in `includes/auth.php` acting as a gatekeeper for every protected route.
     *   Implemented strict session hijacking prevention by regenerating session IDs on login.
 *   **Brute Force Protection Strategy**:
