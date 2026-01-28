@@ -1,0 +1,10 @@
+vendor/
+node_modules/
+.env
+config.php
+uploads/*
+!uploads/.gitkeep
+.DS_Store
+Thumbs.db
+*.log
+tmp/
