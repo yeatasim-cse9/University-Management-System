@@ -176,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="w-12 h-12 bg-yellow-400 flex items-center justify-center border-2 border-white">
                         <i class="fas fa-graduation-cap text-black text-xl"></i>
                     </div>
-                    <span class="text-2xl font-black tracking-tighter uppercase font-outfit">ACADEMIX_OS</span>
+                    <span class="text-2xl font-black tracking-tighter uppercase font-outfit">ACADEMIX</span>
                 </div>
 
                 <div class="mt-auto space-y-6">

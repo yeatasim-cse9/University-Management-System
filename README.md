@@ -69,19 +69,19 @@ academix/
 ## Setup Instructions
 
 1. **Clone the repository**
-    ```sh
-    git clone https://github.com/yeatasim-cse9/University-Management-System.git
-    ```
+	```sh
+	git clone https://github.com/yeatasim-cse9/University-Management-System.git
+	```
 2. **Import the Database**
-    - Import `database/full_setup_2026.sql` into your MySQL server.
+	- Import `database/full_setup_2026.sql` into your MySQL server.
 3. **Configure Application**
-    - Edit `config/settings.php` and `config/database.php` for your environment.
+	- Edit `config/settings.php` and `config/database.php` for your environment.
 4. **Set Up Web Server**
-    - Serve the project via Apache/Nginx (DocumentRoot should point to the project root).
+	- Serve the project via Apache/Nginx (DocumentRoot should point to the project root).
 5. **File Permissions**
-    - Ensure `uploads/` and `logs/` are writable by the web server.
+	- Ensure `uploads/` and `logs/` are writable by the web server.
 6. **Default Credentials**
-    - See seed users in the SQL file (e.g., `superadmin` / `123456`).
+	- See seed users in the SQL file (e.g., `superadmin` / `123456`).
 
 ---
 

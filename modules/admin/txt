@@ -1,0 +1,770 @@
+📅 Class Routine Management System - Functional & UI Specification
+
+This document details the user roles, capabilities, and screen designs for the Class Routine Management System.
+
+🎭 Role-Based Job Descriptions
+
+1️⃣ DEPARTMENT ADMIN
+
+Role: The primary manager of the schedule.
+📌 Responsibilities:
+
+A. Time Slot Management:
+
+Create new time slots (e.g., 8:00-8:50, 8:50-9:40).
+
+Edit/Delete existing time slots.
+
+Define Break Times and Lunch Times separately.
+
+Change class duration (50 mins / 60 mins / 90 mins).
+
+B. Room Management:
+
+View Room List (All rooms with capacity and type).
+
+Add new rooms.
+
+Set Room Features (Projector available, AC, Lab equipment).
+
+Mark rooms as temporarily unavailable.
+
+View Room-wise Schedule (See what is happening in a specific room at any time).
+
+C. Teacher & Course Assignment:
+
+Select which teacher takes which course.
+
+Assign multiple teachers to the same course (e.g., separate teachers for Theory & Lab).
+
+View Teacher Preferences (Preferred/Unpreferred times).
+
+View Total Workload (Classes per week to prevent burnout).
+
+D. Create Class Schedule (Core Task):
+
+Manual Mode: Drag-and-drop classes into slots.
+
+Quick Assign: Schedule all classes for a specific course at once.
+
+Template Use: Copy schedule from a previous semester.
+
+Select Course + Teacher + Room + Day + Time simultaneously.
+
+Set Weekly Patterns (Repeat same time every week).
+
+E. Conflict Management:
+
+View all types of conflicts:
+
+Same teacher assigned to two places at once.
+
+Same room booked for two classes at once.
+
+Student Batch Conflict (Section A has 2 classes at the same time).
+
+Auto-suggestion: Receive AI suggestions for alternative slots to resolve conflicts.
+
+Ignore Conflict: Override warnings (if intentional).
+
+F. Reschedule Request Management:
+
+View reschedule requests from teachers.
+
+Approve or Reject requests.
+
+Suggest alternative slots back to the teacher.
+
+G. Publish & Distribution:
+
+Work in "Draft Mode" initially.
+
+Publish to users after review.
+
+Export to PDF/Excel.
+
+Send notifications to all stakeholders.
+
+2️⃣ TEACHER
+
+Role: The executor of the classes.
+📌 Responsibilities:
+
+A. View Own Schedule:
+
+View weekly classes in List or Grid view.
+
+Filter by day (Today's classes, Tomorrow's classes).
+
+Class Details: Course Name, Section, Room Number, Time, Number of Students Enrolled.
+
+B. Set Availability:
+
+Click on a calendar view to mark status:
+
+✅ Available
+
+❌ Unavailable (Must provide reason: meeting, research, personal).
+
+⭐ Preferred (Ideally wants class at this time).
+
+Set recurring unavailability (e.g., Unavailable every Tuesday 1-2 PM).
+
+C. Send Reschedule Request:
+
+Select specific class to reschedule.
+
+Provide reason (Meeting, Sick Leave, Conference).
+
+Suggest Preferred Alternative Time.
+
+Track Request Status (Pending/Approved/Rejected).
+
+D. Download & Export:
+
+Download schedule as PDF.
+
+Download in iCalendar format (for Google Calendar/Outlook).
+
+Weekly/Monthly print view.
+
+E. Notifications:
+
+Alerts when the schedule changes.
+
+Notification when a new class is assigned.
+
+Notification on Reschedule Approval/Rejection.
+
+❌ Restrictions:
+
+Cannot view or edit other teachers' schedules.
+
+Cannot change Rooms or Time Slots directly.
+
+Cannot modify Course Offerings.
+
+Cannot delete any schedule.
+
+3️⃣ STUDENT
+
+Role: The consumer of the schedule.
+📌 Responsibilities:
+
+A. View Own Routine:
+
+View full weekly routine based on Batch/Section.
+
+View Modes:
+
+📅 Weekly Grid View: Full week at a glance.
+
+📋 List View: Chronological list.
+
+📆 Day View: Focus on today.
+
+Class Info: Course Code/Name, Teacher Name, Room/Building, Time, Type (Lecture/Lab).
+
+B. Filter & Search:
+
+Search for specific courses.
+
+View classes for specific days.
+
+Find classes by Teacher name.
+
+C. Download Options:
+
+PDF Download (Print-friendly).
+
+iCalendar format.
+
+Direct Google Calendar Sync button.
+
+Screenshot-friendly view.
+
+D. Class Status:
+
+Notification + Crossed-out mark for Cancelled classes.
+
+Highlighted new time for Rescheduled classes.
+
+Current/Today's classes highlighted.
+
+E. Reschedule Vote (Optional Feature):
+
+Vote on new times if a teacher requests a reschedule.
+
+Select preferred slot.
+
+❌ Restrictions:
+
+Cannot edit any schedule.
+
+Cannot view other sections (unless allowed).
+
+Cannot change Room or Teacher.
+
+No administrative capabilities.
+
+4️⃣ SUPER ADMIN
+
+Role: System overseer.
+📌 Responsibilities:
+
+A. System-wide Control:
+
+View schedules of ALL departments.
+
+Edit any department's schedule.
+
+View Cross-Department Conflicts (regarding shared resources/rooms).
+
+B. Configuration:
+
+Global Settings: Set default class duration.
+
+Enforce Break Times across all departments.
+
+Manage Academic Calendar.
+
+Set Holidays/Exam Schedules (Applicable to all).
+
+C. Reports & Analytics:
+
+Schedule Summary for all departments.
+
+Room Utilization Report: Heatmap of room usage.
+
+Teacher Workload Report: Identify overloaded teachers.
+
+Conflict Statistics.
+
+D. Audit & Logs:
+
+Track who changed what and when.
+
+Monitor unauthorized changes.
+
+🖥️ Screen Designs (Wireframes)
+
+📱 SCREEN 1: Department Admin Dashboard
+
+╔════════════════════════════════════════════════════════════════╗
+║  🏛️ Department Admin - Routine Management                     ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  📊 Quick Stats:                                               ║
+║  ┌─────────────┬─────────────┬─────────────┬─────────────┐   ║
+║  │ Total       │ Conflicts   │ Pending     │ Published   │   ║
+║  │ Classes     │   🔴 5      │ Requests    │ Schedules   │   ║
+║  │   156       │             │   3         │   145       │   ║
+║  └─────────────┴─────────────┴─────────────┴─────────────┘   ║
+║                                                                 ║
+║  🔧 Main Menu:                                                 ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ [📅 Manage Time Slots]  [🏢 Manage Rooms]               │ ║
+║  │ [👨‍🏫 Assign Teachers]   [📋 Create Schedule]            │ ║
+║  │ [⚠️ View Conflicts]      [📤 Publish Schedule]           │ ║
+║  │ [📥 Import Template]     [📊 Reports]                    │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  🔔 Recent Notifications:                                      ║
+║  • Dr. Rahman requested reschedule for CSE101 (2 hours ago)   ║
+║  • New conflict detected in Room 401 (Sunday 10 AM)           ║
+║  • Spring 2026 schedule 85% complete                          ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 2: Time Slot Management (Admin)
+
+╔════════════════════════════════════════════════════════════════╗
+║  ⏰ Time Slot Management                    [+ Add New Slot]   ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  Current Time Slots for Spring 2026:                          ║
+║                                                                 ║
+║  ┌────────┬──────────┬──────────┬─────────┬──────────────┐   ║
+║  │ Slot # │ Start    │ End      │ Type    │ Actions      │   ║
+║  ├────────┼──────────┼──────────┼─────────┼──────────────┤   ║
+║  │   1    │ 08:00 AM │ 08:50 AM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  │   2    │ 08:50 AM │ 09:40 AM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  │   3    │ 09:40 AM │ 10:00 AM │ Break   │ [✏️ Edit][🗑️]│   ║
+║  │   4    │ 10:00 AM │ 10:50 AM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  │   5    │ 10:50 AM │ 11:40 AM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  │   6    │ 11:40 AM │ 12:30 PM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  │   7    │ 12:30 PM │ 01:30 PM │ Lunch   │ [✏️ Edit][🗑️]│   ║
+║  │   8    │ 01:30 PM │ 02:20 PM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  │   9    │ 02:20 PM │ 03:10 PM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  │  10    │ 03:10 PM │ 04:00 PM │ Class   │ [✏️ Edit][🗑️]│   ║
+║  └────────┴──────────┴──────────┴─────────┴──────────────┘   ║
+║                                                                 ║
+║  💡 Tip: Break and Lunch slots cannot be used for classes     ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 3: Room Management (Admin)
+
+╔════════════════════════════════════════════════════════════════╗
+║  🏢 Room Management                        [+ Add New Room]    ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  Filter: [All Rooms ▼]  [Building: All ▼]  [🔍 Search]        ║
+║                                                                 ║
+║  ┌──────────┬──────────────┬──────────┬─────────┬──────────┐ ║
+║  │ Room     │ Building     │ Capacity │ Type    │ Features │ ║
+║  ├──────────┼──────────────┼──────────┼─────────┼──────────┤ ║
+║  │ CSE-401  │ Engineering  │    60    │ Class   │ 🖥️ 📽️ ❄️ │ ║
+║  │          │ Building     │          │         │ [View]   │ ║
+║  ├──────────┼──────────────┼──────────┼─────────┼──────────┤ ║
+║  │ CSE-402  │ Engineering  │    60    │ Class   │ 📽️ ❄️    │ ║
+║  │          │ Building     │          │         │ [View]   │ ║
+║  ├──────────┼──────────────┼──────────┼─────────┼──────────┤ ║
+║  │ LAB-501  │ Engineering  │    30    │ Lab     │ 💻x30 📽️│ ║
+║  │          │ Building     │          │         │ [View]   │ ║
+║  ├──────────┼──────────────┼──────────┼─────────┼──────────┤ ║
+║  │ HALL-A   │ Main Bldg    │   200    │ Lecture │ 🎤 📽️ ❄️ │ ║
+║  │          │              │          │ Hall    │ [View]   │ ║
+║  └──────────┴──────────────┴──────────┴─────────┴──────────┘ ║
+║                                                                 ║
+║  Legend: 🖥️ Whiteboard | 📽️ Projector | ❄️ AC | 💻 Computers  ║
+║         🎤 Sound System                                        ║
+║                                                                 ║
+║  Click on a room to view its weekly schedule →                ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 4: Create Class Schedule - Main View (Admin)
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║  📋 Create Class Schedule - Spring 2026                   Mode: [Grid View ▼] ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                                ║
+║  Course: [CSE101 - Programming ▼]  Section: [A ▼]  Teacher: [Dr. Rahman ▼]  ║
+║                                                                                ║
+║  📅 Weekly Schedule Grid:                           [🔍 Show Conflicts Only]  ║
+║                                                                                ║
+║  ┌────────┬─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐     ║
+║  │  Time  │ Sunday  │ Monday  │ Tuesday │ Wed.    │ Thurs.  │ Friday  │     ║
+║  ├────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤     ║
+║  │08:00AM │   ✅    │         │   ✅    │         │   ✅    │         │     ║
+║  │        │CSE101-A │         │CSE101-A │         │CSE101-A │         │     ║
+║  │        │CSE-401  │         │CSE-401  │         │LAB-501  │         │     ║
+║  │        │Dr.Rahman│         │Dr.Rahman│         │Dr.Rahman│         │     ║
+║  ├────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤     ║
+║  │08:50AM │         │   🔴    │         │         │         │         │     ║
+║  │        │         │CONFLICT │         │         │         │         │     ║
+║  │        │         │(Teacher)│         │         │         │         │     ║
+║  ├────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤     ║
+║  │09:40AM │  BREAK TIME                                                │     ║
+║  ├────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤     ║
+║  │10:00AM │         │   ⭐    │         │   💡    │         │         │     ║
+║  │        │         │Available│         │Suggested│         │         │     ║
+║  │        │         │         │         │         │         │         │     ║
+║  ├────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤     ║
+║  │   ...  │         │         │         │         │         │         │     ║
+║  └────────┴─────────┴─────────┴─────────┴─────────┴─────────┴─────────┘     ║
+║                                                                                ║
+║  Legend:                                                                       ║
+║  ✅ Scheduled  🔴 Conflict  ⭐ Available  💡 AI Suggested  ⚠️ Teacher Unavail ║
+║                                                                                ║
+║  Quick Actions:                                                                ║
+║  [📌 Pin This Schedule]  [🔄 Auto-fill Week]  [💾 Save as Template]          ║
+║  [⬅️ Previous Week]      [➡️ Next Week]       [📤 Publish]                    ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+
+Admin Actions on this Screen:
+
+Clicking an empty cell opens the Assignment Popup.
+
+Clicking a Scheduled cell allows Edit/Delete.
+
+Clicking a Conflict cell shows conflict details.
+
+Drag & Drop supported for moving classes.
+
+"Auto-fill" uses AI to fill the week based on constraints.
+
+📱 SCREEN 5: Quick Assign Modal (Admin - Popup)
+
+╔═══════════════════════════════════════════════════════════════╗
+║  ⚡ Quick Assign Class                            [✖️ Close]  ║
+╠═══════════════════════════════════════════════════════════════╣
+║                                                                ║
+║  📚 Course Details:                                           ║
+║  Course: [CSE101 - Intro to Programming ▼]                   ║
+║  Section: [A ▼]  (60 students enrolled)                      ║
+║                                                                ║
+║  👨‍🏫 Assign Teacher:                                          ║
+║  Primary Teacher: [Dr. Abdul Rahman ▼]                        ║
+║  (Optional) Co-Teacher: [None ▼]                             ║
+║                                                                ║
+║  ⏰ Class Schedule:                                           ║
+║  Classes per week: [3 ▼]                                     ║
+║  Class Duration: [50 minutes ▼]                              ║
+║                                                                ║
+║  📅 Preferred Days:                                           ║
+║  ☑️ Sunday   ☑️ Monday   ☐ Tuesday                           ║
+║  ☑️ Wednesday ☐ Thursday ☑️ Friday                           ║
+║                                                                ║
+║  🏢 Room Preference:                                          ║
+║  Room Type: [Classroom ▼]                                    ║
+║  Specific Room: [Auto-select ▼] or [CSE-401 ▼]              ║
+║  Required Features: ☑️ Projector  ☑️ AC  ☐ Lab Equipment     ║
+║                                                                ║
+║  🔄 Recurrence:                                               ║
+║  ⚫ Weekly (same time every week)                            ║
+║  ⚪ Bi-weekly                                                 ║
+║  ⚪ One-time only                                             ║
+║                                                                ║
+║  End Date: [May 31, 2026]  (End of semester)                 ║
+║                                                                ║
+║  ┌──────────────────────────────────────────────────────────┐║
+║  │ 💡 AI Suggestions Based on Constraints:                 │║
+║  │                                                          │║
+║  │ Option 1: Sun 8:00AM, Tue 10:00AM, Thu 8:00AM          │║
+║  │           Room: CSE-401  ✅ No Conflicts                │║
+║  │           [Select This]                                 │║
+║  │                                                          │║
+║  │ Option 2: Sun 10:00AM, Mon 2:00PM, Wed 8:00AM          │║
+║  │           Room: CSE-402  ⚠️ Teacher unavailable Mon 2PM │║
+║  │           [Select This]                                 │║
+║  │                                                          │║
+║  │ Option 3: Mon 8:00AM, Wed 10:00AM, Fri 2:00PM          │║
+║  │           Room: CSE-401  ✅ No Conflicts                │║
+║  │           [Select This]                                 │║
+║  └──────────────────────────────────────────────────────────┘║
+║                                                                ║
+║  [🔍 Show More Options]     [💾 Save as Draft]  [✅ Schedule]║
+╚═══════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 6: Conflict Management (Admin)
+
+╔════════════════════════════════════════════════════════════════╗
+║  ⚠️ Schedule Conflicts - Spring 2026                          ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  Filter: [All ▼]  Severity: [Critical Only ▼]  [🔍 Search]    ║
+║                                                                 ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ 🔴 CRITICAL - Teacher Double Booking                     │ ║
+║  │ ─────────────────────────────────────────────────────────│ ║
+║  │ Dr. Abdul Rahman is scheduled for 2 classes:            │ ║
+║  │ • CSE101 Section A - Sunday 10:00 AM - Room CSE-401     │ ║
+║  │ • CSE201 Section B - Sunday 10:00 AM - Room CSE-402     │ ║
+║  │                                                           │ ║
+║  │ Suggested Solutions:                                      │ ║
+║  │ 1. Move CSE201-B to Monday 10:00 AM (Room available)    │ ║
+║  │ 2. Assign Dr. Karim to CSE201-B instead                 │ ║
+║  │                                                           │ ║
+║  │ [🔧 Resolve Now]  [⏰ Reschedule]  [❌ Ignore]           │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ 🔴 CRITICAL - Room Double Booking                        │ ║
+║  │ ─────────────────────────────────────────────────────────│ ║
+║  │ Room CSE-401 is booked for 2 classes:                   │ ║
+║  │ • CSE101 Section A - Monday 2:00 PM                      │ ║
+║  │ • CSE102 Section C - Monday 2:00 PM                      │ ║
+║  │                                                           │ ║
+║  │ Available Rooms at this time: CSE-402, CSE-403          │ ║
+║  │                                                           │ ║
+║  │ [🔧 Resolve Now]  [🏢 Change Room]  [❌ Ignore]          │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ 🟡 WARNING - Teacher Preference Not Met                  │ ║
+║  │ ─────────────────────────────────────────────────────────│ ║
+║  │ Dr. Fatema marked Tuesday 8:00 AM as "Unavailable"      │ ║
+║  │ but CSE301 is scheduled at this time.                    │ ║
+║  │                                                           │ ║
+║  │ Reason: Department meeting                               │ ║
+║  │                                                           │ ║
+║  │ [📧 Contact Teacher]  [⏰ Reschedule]  [✅ Mark Resolved]│ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  Summary: 🔴 5 Critical  🟡 3 Warnings  🟢 0 Resolved Today   ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 7: Teacher Dashboard - My Schedule
+
+╔════════════════════════════════════════════════════════════════╗
+║  👨‍🏫 Dr. Abdul Rahman - My Teaching Schedule                   ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  Week of: Feb 2 - Feb 8, 2026          [📅 This Week ▼]       ║
+║                                                                 ║
+║  📊 This Week Summary:                                         ║
+║  Total Classes: 12  |  Total Hours: 10h  |  Rooms: 3 different║
+║                                                                 ║
+║  View: [📅 Weekly Grid]  [📋 List View]  [📆 Today Only]      ║
+║                                                                 ║
+║  ┌────────┬──────────────────────────────────────────────────┐║
+║  │        │                  SUNDAY                           │║
+║  ├────────┼──────────────────────────────────────────────────┤║
+║  │08:00 AM│ 📘 CSE101 - Introduction to Programming          │║
+║  │        │ 👥 Section A (60 students)                       │║
+║  │        │ 🏢 Room: CSE-401, Engineering Building           │║
+║  │        │ 📝 Type: Lecture                                 │║
+║  │        │ [📖 View Details]  [📋 Attendance]               │║
+║  ├────────┼──────────────────────────────────────────────────┤║
+║  │10:00 AM│ 💻 CSE101 - Introduction to Programming (Lab)    │║
+║  │        │ 👥 Section A (30 students)                       │║
+║  │        │ 🏢 Room: LAB-501, Engineering Building           │║
+║  │        │ 📝 Type: Lab                                     │║
+║  │        │ [📖 View Details]  [📋 Attendance]               │║
+║  ├────────┼──────────────────────────────────────────────────┤║
+║  │02:00 PM│ 📘 CSE301 - Data Structures                      │║
+║  │        │ 👥 Section B (55 students)                       │║
+║  │        │ 🏢 Room: CSE-402, Engineering Building           │║
+║  │        │ 📝 Type: Lecture                                 │║
+║  │        │ [📖 View Details]  [📋 Attendance]               │║
+║  └────────┴──────────────────────────────────────────────────┘║
+║                                                                 ║
+║  ┌────────┬──────────────────────────────────────────────────┐║
+║  │        │                  MONDAY                           │║
+║  ├────────┼──────────────────────────────────────────────────┤║
+║  │08:00 AM│ ⚠️ UNAVAILABLE - Research Meeting                │║
+║  │        │ (You marked this time as unavailable)            │║
+║  ├────────┼──────────────────────────────────────────────────┤║
+║  │10:00 AM│ 📘 CSE101 - Introduction to Programming          │║
+║  │        │ 👥 Section A (60 students)                       │║
+║  │        │ 🏢 Room: CSE-401, Engineering Building           │║
+║  │   ...  │  ...                                             │║
+║  └────────┴──────────────────────────────────────────────────┘║
+║                                                                 ║
+║  Quick Actions:                                                 ║
+║  [⏰ Set Availability]  [📥 Download PDF]  [🔔 Notifications]  ║
+║  [📧 Request Reschedule]  [📊 View Full Semester]              ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 8: Teacher Availability Calendar
+
+╔════════════════════════════════════════════════════════════════╗
+║  ⏰ Set Your Availability - Dr. Abdul Rahman                   ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  💡 Click on time slots to mark them as Available/Unavailable ║
+║                                                                 ║
+║  Semester: [Spring 2026 ▼]    Apply to: [⚫ All Weeks]        ║
+║                                          [⚪ Specific Dates]    ║
+║                                                                 ║
+║  ┌──────┬─────────┬─────────┬─────────┬─────────┬─────────┐  ║
+║  │ Time │ Sunday  │ Monday  │ Tuesday │ Wed     │ Thursday│  ║
+║  ├──────┼─────────┼─────────┼─────────┼─────────┼─────────┤  ║
+║  │08:00 │   ✅    │   ❌    │   ✅    │   ✅    │   ⭐    │  ║
+║  │      │Available│Unavail. │Available│Available│Preferred│  ║
+║  ├──────┼─────────┼─────────┼─────────┼─────────┼─────────┤  ║
+║  │08:50 │   ✅    │   ❌    │   ✅    │   ✅    │   ✅    │  ║
+║  ├──────┼─────────┼─────────┼─────────┼─────────┼─────────┤  ║
+║  │10:00 │   ✅    │   ⭐    │   ✅    │   ❌    │   ✅    │  ║
+║  ├──────┼─────────┼─────────┼─────────┼─────────┼─────────┤  ║
+║  │  ... │   ...   │   ...   │   ...   │   ...   │   ...   │  ║
+║  └──────┴─────────┴─────────┴─────────┴─────────┴─────────┘  ║
+║                                                                 ║
+║  Legend:  ✅ Available  ❌ Unavailable  ⭐ Preferred           ║
+║                                                                 ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ 📝 Add Reason for Unavailability:                        │ ║
+║  │                                                           │ ║
+║  │ Monday 08:00 AM - Unavailable                            │ ║
+║  │ Reason: [Department faculty meeting__________________]   │ ║
+║  │                                                           │ ║
+║  │ Wednesday 10:00 AM - Unavailable                         │ ║
+║  │ Reason: [Personal appointment_______________________]    │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  ⚠️ Note: Admin can override your unavailability in urgent    ║
+║     situations. You'll be notified if this happens.           ║
+║                                                                 ║
+║  [💾 Save Changes]  [🔄 Reset to Default]  [❌ Cancel]        ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 9: Teacher - Request Reschedule
+
+╔════════════════════════════════════════════════════════════════╗
+║  📧 Request Class Reschedule                                   ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  Select Class to Reschedule:                                   ║
+║  Course: [CSE101 - Intro to Programming ▼]                    ║
+║  Section: [A ▼]                                               ║
+║                                                                 ║
+║  Current Schedule:                                             ║
+║  📅 Day: Sunday                                                ║
+║  ⏰ Time: 08:00 AM - 08:50 AM                                 ║
+║  🏢 Room: CSE-401                                             ║
+║  📆 Date: Feb 15, 2026                                        ║
+║                                                                 ║
+║  Reschedule Type:                                              ║
+║  ⚫ One-time reschedule (this class only)                     ║
+║  ⚪ Permanent change (all future classes)                     ║
+║                                                                 ║
+║  Reason for Reschedule: * ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ [Attending academic conference in Dhaka_______________] │ ║
+║  │ [________________________________________________]       │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  Preferred Alternative Time:                                   ║
+║  Option 1: Day [Monday ▼]     Time [10:00 AM ▼]              ║
+║           Room [CSE-401 ▼] or [Auto-select ▼]                ║
+║                                                                 ║
+║  Option 2: Day [Tuesday ▼]    Time [02:00 PM ▼]              ║
+║           Room [Any ▼]                                        ║
+║                                                                 ║
+║  ☑️ Notify students about this change                         ║
+║  ☑️ Send me a copy of this request                            ║
+║                                                                 ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ ⚠️ Important:                                             │ ║
+║  │ • Request must be submitted at least 24 hours in advance │ ║
+║  │ • Students will be notified once approved               │ ║
+║  │ • You'll receive confirmation via email                 │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  [📤 Submit Request]  [💾 Save as Draft]  [❌ Cancel]         ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 10: Student Dashboard - My Class Routine
+
+╔════════════════════════════════════════════════════════════════╗
+║  🎓 My Class Routine - Shahin Ahmed (CSE, Section A)          ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  Semester: Spring 2026          Week: Feb 2-8, 2026           ║
+║                                                                 ║
+║  View: [📅 Weekly]  [📋 List]  [📆 Today]  [📥 Download PDF]  ║
+║                                                                 ║
+║  🕐 TODAY'S CLASSES (Sunday, Feb 2):                          ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ ⏰ 08:00 - 08:50 AM                              [NOW!]  │ ║
+║  │ 📘 CSE101 - Introduction to Programming                 │ ║
+║  │ 👨‍🏫 Dr. Abdul Rahman                                      │ ║
+║  │ 🏢 Room CSE-401, Engineering Building                   │ ║
+║  │ 📝 Lecture                                              │ ║
+║  ├──────────────────────────────────────────────────────────┤ ║
+║  │ ⏰ 08:50 - 09:40 AM                                      │ ║
+║  │ 📗 MAT101 - Calculus I                                  │ ║
+║  │ 👨‍🏫 Dr. Karim Hossain                                    │ ║
+║  │ 🏢 Room MATH-201, Science Building                      │ ║
+║  │ 📝 Lecture                                              │ ║
+║  ├──────────────────────────────────────────────────────────┤ ║
+║  │ ⏰ 09:40 - 10:00 AM                                      │ ║
+║  │ ☕ BREAK TIME                                            │ ║
+║  ├──────────────────────────────────────────────────────────┤ ║
+║  │ ⏰ 10:00 - 11:40 AM (2 hours)                           │ ║
+║  │ 💻 CSE101 - Programming Lab                             │ ║
+║  │ 👨‍🏫 Dr. Abdul Rahman                                      │ ║
+║  │ 🏢 Room LAB-501, Engineering Building                   │ ║
+║  │ 📝 Lab Session                                          │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  📅 FULL WEEK VIEW:                                           ║
+║  ┌──────┬────────┬────────┬────────┬────────┬────────┐       ║
+║  │ Time │ Sun    │ Mon    │ Tue    │ Wed    │ Thu    │       ║
+║  ├──────┼────────┼────────┼────────┼────────┼────────┤       ║
+║  │08:00 │CSE101  │PHY101  │CSE101  │MAT101  │CSE102  │       ║
+║  │      │CSE-401 │PHY-101 │CSE-401 │MATH201 │CSE-402 │       ║
+║  ├──────┼────────┼────────┼────────┼────────┼────────┤       ║
+║  │08:50 │MAT101  │MAT101  │PHY101  │CSE101  │PHY101  │       ║
+║  │      │MATH201 │MATH201 │PHY-101 │CSE-401 │PHY-101 │       ║
+║  ├──────┼────────┼────────┼────────┼────────┼────────┤       ║
+║  │10:00 │CSE101  │        │CSE102  │        │CSE101  │       ║
+║  │      │LAB-501 │        │CSE-402 │        │LAB-501 │       ║
+║  │      │(Lab)   │        │        │        │(Lab)   │       ║
+║  ├──────┼────────┼────────┼────────┼────────┼────────┤       ║
+║  │12:30 │    🍽️ LUNCH BREAK                         │       ║
+║  ├──────┼────────┼────────┼────────┼────────┼────────┤       ║
+║  │02:00 │PHY101  │CSE102  │        │PHY101  │        │       ║
+║  │      │PHY-LAB │CSE-402 │        │PHY-101 │        │       ║
+║  │      │(Lab)   │        │        │        │        │       ║
+║  └──────┴────────┴────────┴────────┴────────┴────────┘       ║
+║                                                                 ║
+║  🔔 Notifications:                                             ║
+║  • CSE301 class on Wed has been rescheduled to Thursday       ║
+║  • New assignment posted in MAT101                            ║
+║                                                                 ║
+║  [📥 Download iCal]  [🖨️ Print View]  [📧 Email to Me]       ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+📱 SCREEN 11: Student - Class Details View
+
+╔════════════════════════════════════════════════════════════════╗
+║  📘 Class Details - CSE101 Introduction to Programming        ║
+╠════════════════════════════════════════════════════════════════╣
+║                                                                 ║
+║  📋 Course Information:                                        ║
+║  Course Code: CSE101                                           ║
+║  Course Name: Introduction to Programming                      ║
+║  Credit Hours: 3.0                                            ║
+║  Section: A                                                    ║
+║  Semester: Spring 2026                                         ║
+║                                                                 ║
+║  👨‍🏫 Instructor:                                               ║
+║  Dr. Abdul Rahman                                              ║
+║  Email: rahman@university.edu                                  ║
+║  Office: Room 505, Engineering Building                        ║
+║  Office Hours: Sun & Wed, 3:00-4:00 PM                        ║
+║                                                                 ║
+║  ⏰ Class Schedule:                                            ║
+║  ┌──────────────────────────────────────────────────────────┐ ║
+║  │ Lectures (3 per week):                                   │ ║
+║  │ • Sunday    08:00-08:50 AM    Room: CSE-401             │ ║
+║  │ • Tuesday   08:00-08:50 AM    Room: CSE-401             │ ║
+║  │ • Wednesday 10:00-10:50 AM    Room: CSE-401             │ ║
+║  │                                                           │ ║
+║  │ Lab Sessions (2 per week):                               │ ║
+║  │ • Sunday    10:00-11:40 AM    Room: LAB-501             │ ║
+║  │ • Thursday  10:00-11:40 AM    Room: LAB-501             │ ║
+║  └──────────────────────────────────────────────────────────┘ ║
+║                                                                 ║
+║  📊 My Attendance: 92% (23/25 classes attended)               ║
+║  📝 My Grade: A- (Current)                                    ║
+║                                                                 ║
+║  📚 Quick Links:                                               ║
+║  [📖 Course Materials]  [✍️ Assignments]  [📊 Grades]         ║
+║  [💬 Discussion Forum]  [📅 View All Classes]                 ║
+║                                                                 ║
+║  [⬅️ Back to Routine]                                          ║
+╚════════════════════════════════════════════════════════════════╝
+
+
+🎯 Summary of Permissions
+
+Role
+
+Core Tasks
+
+UI Access
+
+Department Admin
+
+Create full routine, Edit, Publish, Manage Conflicts
+
+All Screens (1-6)
+
+Teacher
+
+View own schedule, Set availability, Request reschedule
+
+Screens 7-9
+
+Student
+
+View own routine, Download schedule
+
+Screens 10-11
+
+Super Admin
+
+Control all departments, System Settings
+
+All Screens + Analytics

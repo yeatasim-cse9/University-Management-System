@@ -17,15 +17,15 @@ $dashboard_url = BASE_URL . "/modules/{$role}/dashboard.php";
                     <i class="fas fa-graduation-cap text-xl"></i>
                 </div>
                 <div>
-                    <span class="text-2xl font-black text-white tracking-tighter uppercase font-outfit leading-none block">ACADEMIX_OS</span>
+                    <span class="text-2xl font-black text-white tracking-tighter uppercase font-outfit leading-none block">ACADEMIX</span>
                     <span class="text-[9px] font-black text-yellow-500 uppercase tracking-[0.3em] mt-1 block">University // Barisal</span>
                 </div>
             </div>
             <p class="text-[11px] text-slate-400 font-mono leading-relaxed max-w-[240px] uppercase">
-                > INITIALIZING EDUCATIONAL PROTOCOLS...<br>
-                > STATUS: <span class="text-yellow-400">OPTIMIZED</span><br>
+                > Loading Academix system...<br>
+                > Status: <span class="text-yellow-400">Ready</span><br>
                 ---<br>
-                Pioneering the future of educational infrastructure.
+                Easy tools for a better school.
             </p>
             <div class="flex gap-3">
                 <a href="#" class="w-10 h-10 bg-white/10 border border-white/20 text-white flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all shadow-[4px_4px_0px_rgba(0,0,0,0.5)]"><i class="fab fa-facebook-f text-xs"></i></a>
@@ -37,46 +37,46 @@ $dashboard_url = BASE_URL . "/modules/{$role}/dashboard.php";
         <!-- Dynamic Navigation -->
         <div>
             <h4 class="text-[11px] font-black text-yellow-500 uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
-                TACTICAL_SECTORS
+                Quick Links
                 <span class="flex-1 h-[1px] bg-white/20"></span>
             </h4>
             <ul class="space-y-4">
-                <li><a href="<?php echo $dashboard_url; ?>" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Command Center</a></li>
+                <li><a href="<?php echo $dashboard_url; ?>" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Dashboard</a></li>
                 <?php if ($role === 'student'): ?>
-                    <li><a href="<?php echo BASE_URL; ?>/modules/student/routine.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Temporal Grid</a></li>
-                    <li><a href="<?php echo BASE_URL; ?>/modules/student/my-courses.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Academic Hub</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>/modules/student/routine.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Schedule</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>/modules/student/my-courses.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">My Courses</a></li>
                 <?php elseif ($role === 'teacher'): ?>
-                    <li><a href="<?php echo BASE_URL; ?>/modules/teacher/my-courses.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Course Registry</a></li>
-                    <li><a href="<?php echo BASE_URL; ?>/modules/teacher/attendance.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Attendance Logs</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>/modules/teacher/my-courses.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Class List</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>/modules/teacher/attendance.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Attendance</a></li>
                 <?php endif; ?>
-                <li><a href="<?php echo BASE_URL; ?>/modules/auth/profile.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Identity Hub</a></li>
+                <li><a href="<?php echo BASE_URL; ?>/modules/auth/profile.php" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">My Profile</a></li>
             </ul>
         </div>
 
         <!-- Resources -->
         <div>
             <h4 class="text-[11px] font-black text-yellow-500 uppercase tracking-[0.3em] mb-8 flex items-center gap-2">
-                RESOURCES
+                Help & Links
                 <span class="flex-1 h-[1px] bg-white/20"></span>
             </h4>
             <ul class="space-y-4">
-                <li><a href="#" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Technical Support</a></li>
-                <li><a href="#" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Terminal Guide</a></li>
-                <li><a href="#" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Global Protocol</a></li>
+                <li><a href="#" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Get Help</a></li>
+                <li><a href="#" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">How to Use</a></li>
+                <li><a href="#" class="text-[11px] text-slate-300 font-bold hover:text-yellow-400 hover:translate-x-1 inline-block transition-all uppercase tracking-widest border-l-2 border-transparent hover:border-yellow-400 pl-0 hover:pl-3">Support & Info</a></li>
             </ul>
         </div>
 
         <!-- Terminal Status -->
         <div>
             <div class="bg-yellow-400 p-8 border-4 border-black shadow-[8px_8px_0px_rgba(255,255,255,0.1)] group">
-                <h4 class="text-[11px] font-black text-black uppercase tracking-[0.3em] mb-4 border-b-2 border-black/20 pb-2">Terminal Status</h4>
+                <h4 class="text-[11px] font-black text-black uppercase tracking-[0.3em] mb-4 border-b-2 border-black/20 pb-2">System Status</h4>
                 <div class="space-y-4 text-black">
                     <div class="flex items-center gap-3">
                         <span class="w-3 h-3 bg-black animate-pulse"></span>
-                        <span class="text-[12px] font-black uppercase tracking-widest">Link Active</span>
+                        <span class="text-[12px] font-black uppercase tracking-widest">Online</span>
                     </div>
                     <div class="pt-4 border-t-2 border-black/10">
-                        <p class="text-[9px] font-black opacity-50 uppercase tracking-widest mb-1">Current Sync</p>
+                        <p class="text-[9px] font-black opacity-50 uppercase tracking-widest mb-1">Current Time</p>
                         <p class="text-[12px] font-black uppercase font-mono"><?php echo date('Y-m-d H:i'); ?></p>
                     </div>
                 </div>
@@ -87,12 +87,12 @@ $dashboard_url = BASE_URL . "/modules/{$role}/dashboard.php";
     <!-- Final Footer -->
     <div class="pt-8 border-t-2 border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 px-6 lg:px-12">
         <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] text-center md:text-left font-mono">
-            &copy; <?php echo date('Y'); ?> [ <span class="text-white"><?php echo UNIVERSITY_NAME; ?></span> ] // ALL SYSTEMS NOMINAL
+            &copy; <?php echo date('Y'); ?> [ <span class="text-white"><?php echo UNIVERSITY_NAME; ?></span> ] // Everything is working
         </p>
         <div class="flex items-center gap-4">
             <div class="px-3 py-1 border-2 border-white/20 text-[9px] font-black text-yellow-400 uppercase tracking-widest">V4.2.0-STABLE</div>
             <div class="w-22 h-1 stripe-accent"></div>
-            <span class="text-[10px] font-black text-white uppercase tracking-widest italic font-outfit">ACADEMIX_OS</span>
+            <span class="text-[10px] font-black text-white uppercase tracking-widest italic font-outfit">Academix System</span>
         </div>
     </div>
 </footer>
