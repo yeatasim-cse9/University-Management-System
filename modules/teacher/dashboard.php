@@ -31,6 +31,21 @@ if (!$teacher) {
 
 $teacher_id = $teacher['id'];
 
+// Check for Reschedule Requests (Pending Action)
+$req_query = "SELECT rr.id as req_id, rr.created_at, c.course_code, c.course_name, co.section, cs.course_offering_id,
+                     (SELECT COUNT(*) FROM votes v WHERE v.request_id = rr.id) as vote_count,
+                     (SELECT COUNT(*) FROM enrollments e WHERE e.course_offering_id = co.id) as total_students
+              FROM reschedule_requests rr
+              JOIN class_schedule cs ON rr.class_id = cs.id
+              JOIN course_offerings co ON cs.course_offering_id = co.id
+              JOIN courses c ON co.course_id = c.id
+              JOIN teacher_courses tc ON co.id = tc.course_offering_id
+              WHERE tc.teacher_id = $teacher_id AND rr.status = 'threshold_reached'";
+$pending_requests = [];
+if ($r_result = $db->query($req_query)) {
+    $pending_requests = $r_result->fetch_all(MYSQLI_ASSOC);
+}
+
 // Get statistics (Consolidated Query)
 $today = date('l'); // Day name
 
@@ -71,12 +86,23 @@ while ($row = $result->fetch_assoc()) {
 }
 
 // 2. Fetch Rescheduled/Cancelled Exceptions
-$res_query = "SELECT cr.*, c.course_code, c.course_name, c.course_type, co.section, s.semester_number 
+// 2. Fetch Rescheduled/Cancelled Exceptions
+$res_query = "SELECT cr.*, 
+                     ra.course_offering_id,
+                     c.course_code, c.course_name, c.course_type, 
+                     co.section, 
+                     s.semester_number,
+                     rs.start_time as new_start_time,
+                     rs.end_time as new_end_time,
+                     r.name as room_number
     FROM class_reschedules cr
-    JOIN course_offerings co ON cr.course_offering_id = co.id
+    JOIN routine_assignments ra ON cr.routine_assignment_id = ra.id
+    JOIN course_offerings co ON ra.course_offering_id = co.id
     JOIN courses c ON co.course_id = c.id
     JOIN semesters s ON co.semester_id = s.id
     JOIN teacher_courses tc ON co.id = tc.course_offering_id
+    JOIN routine_slots rs ON cr.new_slot_id = rs.id
+    LEFT JOIN rooms r ON cr.new_room_id = r.id
     WHERE tc.teacher_id = $teacher_id 
     AND (cr.original_date = '$today_date' OR cr.new_date = '$today_date')
     AND cr.status = 'active'";
@@ -235,6 +261,34 @@ ob_start();
         </a>
     </div>
 
+    <?php if (!empty($pending_requests)): ?>
+    <div class="os-card p-6 bg-red-50 border-2 border-red-500 mb-8 animate-pulse-slow">
+        <h3 class="text-xl font-black uppercase mb-4 flex items-center gap-2 text-red-700">
+            <i class="fas fa-bell animate-swing"></i> Action Required: Reschedule Requests
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <?php foreach ($pending_requests as $req): 
+                  $pct = ($req['total_students'] > 0) ? round(($req['vote_count'] / $req['total_students']) * 100) : 0;
+            ?>
+            <div class="bg-white border-2 border-black p-4 shadow-[4px_4px_0px_rgba(0,0,0,0.1)] relative">
+                <div class="absolute -top-3 -right-2 bg-black text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">
+                    <?php echo $pct; ?>% AGREEMENT
+                </div>
+                <h4 class="font-black uppercase text-lg leading-none mb-1"><?php echo $req['course_code']; ?></h4>
+                <p class="text-xs font-bold text-gray-500 uppercase mb-3">Sec <?php echo $req['section']; ?></p>
+                <div class="text-[10px] font-mono mb-3 bg-gray-100 p-2 rounded">
+                    <?php echo $req['vote_count']; ?>/<?php echo $req['total_students']; ?> Students Voted
+                </div>
+                <button onclick="openManageModal(<?php echo $req['req_id']; ?>, <?php echo $req['course_offering_id']; ?>, '<?php echo $req['course_code']; ?>')" 
+                        class="w-full bg-red-600 text-white text-xs font-black uppercase py-2 hover:bg-black transition-colors">
+                    Review & Schedule
+                </button>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <?php endif; ?>
+
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <!-- Schedule Section -->
         <div class="lg:col-span-2 os-card p-0 overflow-hidden bg-white">
@@ -388,3 +442,140 @@ $content = ob_get_clean();
 
 // Include layout
 include __DIR__ . '/../../includes/layouts/dashboard.php';
+?>
+
+<!-- Manage Reschedule Modal -->
+<div id="manageModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
+    <div class="bg-white w-full max-w-lg border-4 border-black shadow-[8px_8px_0px_#fff]">
+        <div class="bg-black text-white p-4 flex justify-between items-center">
+            <h3 class="font-black uppercase text-lg">Approve Reschedule</h3>
+            <button onclick="closeManageModal()" class="text-white hover:text-red-500 font-bold text-xl">✕</button>
+        </div>
+        <div class="p-6 overflow-y-auto max-h-[80vh]">
+            <input type="hidden" id="manageReqId">
+            <input type="hidden" id="manageOfferingId">
+            
+            <h4 class="font-bold uppercase text-gray-500 text-xs mb-4" id="manageTitle"></h4>
+            
+            <div class="mb-4 bg-yellow-50 p-3 border border-yellow-200">
+                <h5 class="font-bold uppercase text-xs mb-2">Top Suggested Dates</h5>
+                <ul id="topSuggestions" class="text-xs font-mono space-y-1">
+                    <li>Loading...</li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-[10px] font-black uppercase mb-1">Original Date (To Cancel)</label>
+                    <input type="date" id="origDate" class="w-full border border-black p-2 text-xs">
+                    <p class="text-[9px] text-gray-400 mt-0.5">The class session to be moved</p>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black uppercase mb-1">New Date</label>
+                    <input type="date" id="newDate" class="w-full border border-black p-2 text-xs">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-[10px] font-black uppercase mb-1">New Start Time</label>
+                    <input type="time" id="newStart" class="w-full border border-black p-2 text-xs">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-black uppercase mb-1">New End Time</label>
+                    <input type="time" id="newEnd" class="w-full border border-black p-2 text-xs">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-[10px] font-black uppercase mb-1">Room Number</label>
+                <input type="text" id="newRoom" class="w-full border border-black p-2 text-xs" placeholder="e.g. 301">
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-[10px] font-black uppercase mb-1">Message to Students</label>
+                <textarea id="teacherMsg" class="w-full border border-black p-2 text-xs" rows="2" placeholder="Reason or confirmation..."></textarea>
+            </div>
+
+            <button onclick="submitReschedule()" class="w-full bg-black text-white font-black uppercase py-3 hover:bg-green-600 transition-colors">
+                Confirm & Update Schedule
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+function openManageModal(reqId, offId, code) {
+    document.getElementById('manageModal').classList.remove('hidden');
+    document.getElementById('manageReqId').value = reqId;
+    document.getElementById('manageOfferingId').value = offId;
+    document.getElementById('manageTitle').textContent = 'Scheduling for ' + code;
+    
+    // Fetch Details
+    fetch('<?php echo BASE_URL; ?>/api/teacher/manage_reschedule.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ action: 'get_details', request_id: reqId })
+    })
+    .then(res => res.json())
+    .then(data => {
+        const list = document.getElementById('topSuggestions');
+        list.innerHTML = '';
+        if (data.suggestions && data.suggestions.length > 0) {
+            data.suggestions.forEach(s => {
+                const date = new Date(s.suggested_date).toLocaleString();
+                list.innerHTML += `<li class="flex justify-between"><span>${date}</span> <span class="font-bold">${s.votes} Votes</span></li>`;
+                // Auto-fill top suggestion
+                if (list.children.length === 1) {
+                   const d = new Date(s.suggested_date);
+                   document.getElementById('newDate').value = d.toISOString().split('T')[0];
+                   document.getElementById('newStart').value = d.toTimeString().slice(0,5);
+                   // Default end time +1 hour?
+                   d.setHours(d.getHours() + 1); // Simplification
+                   document.getElementById('newEnd').value = d.toTimeString().slice(0,5);
+                }
+            });
+        } else {
+            list.innerHTML = '<li>No suggestions found</li>';
+        }
+    });
+}
+
+function closeManageModal() {
+    document.getElementById('manageModal').classList.add('hidden');
+}
+
+function submitReschedule() {
+    const data = {
+        action: 'approve',
+        request_id: document.getElementById('manageReqId').value,
+        course_offering_id: document.getElementById('manageOfferingId').value,
+        original_date: document.getElementById('origDate').value,
+        new_date: document.getElementById('newDate').value,
+        new_start_time: document.getElementById('newStart').value,
+        new_end_time: document.getElementById('newEnd').value,
+        room: document.getElementById('newRoom').value,
+        message: document.getElementById('teacherMsg').value
+    };
+
+    if(!data.original_date || !data.new_date) {
+        alert('Please fill all dates');
+        return;
+    }
+
+    fetch('<?php echo BASE_URL; ?>/api/teacher/manage_reschedule.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(data => {
+        if(data.success) {
+            alert('Schedule Updated Successfully');
+            location.reload();
+        } else {
+            alert('Error: ' + data.error);
+        }
+    });
+}
+</script>
