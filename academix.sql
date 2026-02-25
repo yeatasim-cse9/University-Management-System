@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 31, 2026 at 09:17 AM
+-- Generation Time: Feb 24, 2026 at 08:01 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -186,7 +186,70 @@ INSERT INTO `audit_logs` (`id`, `user_id`, `action`, `table_name`, `record_id`, 
 (40, 13, 'logout', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-24 08:35:56'),
 (41, 1, 'login', 'users', 1, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-24 08:36:05'),
 (42, 1, 'logout', 'users', 1, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-24 08:46:26'),
-(43, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-26 06:31:36');
+(43, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-26 06:31:36'),
+(44, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-03 17:58:25'),
+(45, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-03 18:01:17'),
+(46, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-03 19:49:37'),
+(47, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 04:00:47'),
+(48, 3, 'assign_teacher', 'teacher_courses', 69, NULL, '{\"teacher_id\":2,\"offering_id\":33}', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 04:14:07'),
+(49, 3, 'assign_teacher', 'teacher_courses', 70, NULL, '{\"teacher_id\":2,\"offering_id\":67}', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 04:14:40'),
+(50, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 04:15:21'),
+(51, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:10:11'),
+(52, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:44:00'),
+(53, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:44:23'),
+(54, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:46:38'),
+(55, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 07:57:56'),
+(56, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 07:58:06'),
+(57, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 07:58:15'),
+(58, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 08:35:31'),
+(59, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 08:37:12'),
+(60, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 08:37:57'),
+(61, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 10:02:10'),
+(62, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 10:02:25'),
+(63, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 10:02:47'),
+(64, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 17:05:35'),
+(65, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 17:06:22'),
+(66, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 17:18:48'),
+(67, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 19:15:37'),
+(68, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 19:30:10'),
+(69, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-13 18:58:54'),
+(70, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-13 19:08:21'),
+(71, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-14 05:52:01'),
+(72, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-14 06:04:12'),
+(73, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-14 06:23:00'),
+(74, 4, 'logout', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-14 06:26:19'),
+(75, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-14 06:26:24'),
+(76, 4, 'logout', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-14 06:45:57'),
+(77, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-14 06:46:09'),
+(78, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-16 05:42:16'),
+(79, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-16 05:43:15'),
+(80, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-16 06:02:50'),
+(81, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-17 09:25:38'),
+(82, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-17 09:25:52'),
+(83, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 16:46:19'),
+(84, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 16:46:35'),
+(85, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 16:51:04'),
+(86, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 17:24:29'),
+(87, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 17:28:08'),
+(88, 3, 'logout', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 18:08:40'),
+(89, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 18:08:44'),
+(90, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 18:09:04'),
+(91, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 15:37:37'),
+(92, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 15:38:38'),
+(93, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 15:40:32'),
+(94, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 16:18:48'),
+(95, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 16:18:58'),
+(96, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 16:24:39'),
+(97, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 17:57:07'),
+(98, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 19:37:03'),
+(99, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 19:43:00'),
+(100, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 20:01:11'),
+(101, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 04:54:07'),
+(102, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 04:54:53'),
+(103, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 05:01:38'),
+(104, 3, 'login', 'users', 3, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 06:18:52'),
+(105, 4, 'login', 'users', 4, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 06:19:48'),
+(106, 13, 'login', 'users', 13, NULL, NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 06:20:50');
 
 -- --------------------------------------------------------
 
@@ -196,27 +259,30 @@ INSERT INTO `audit_logs` (`id`, `user_id`, `action`, `table_name`, `record_id`, 
 
 CREATE TABLE `class_reschedules` (
   `id` int(10) UNSIGNED NOT NULL,
-  `course_offering_id` int(10) UNSIGNED NOT NULL,
-  `original_schedule_id` int(10) UNSIGNED DEFAULT NULL,
-  `original_date` date NOT NULL,
-  `new_date` date NOT NULL,
-  `new_start_time` time NOT NULL,
-  `new_end_time` time NOT NULL,
-  `room_number` varchar(50) DEFAULT NULL,
-  `reason` text DEFAULT NULL,
+  `reschedule_type` enum('reschedule','cancel') DEFAULT 'reschedule',
+  `routine_assignment_id` int(10) UNSIGNED NOT NULL COMMENT 'The original routine assignment being rescheduled',
+  `original_date` date NOT NULL COMMENT 'The date of the class being rescheduled',
+  `new_date` date NOT NULL COMMENT 'The new date for the class (can be same day, different slot)',
+  `new_slot_id` int(10) UNSIGNED DEFAULT NULL,
+  `new_room_id` int(10) UNSIGNED DEFAULT NULL,
+  `teacher_id` int(10) UNSIGNED NOT NULL COMMENT 'Teacher who created the reschedule',
+  `reason` text DEFAULT NULL COMMENT 'Optional reason for rescheduling',
   `status` enum('active','cancelled') DEFAULT 'active',
-  `created_by` int(10) UNSIGNED NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `class_reschedules`
 --
 
-INSERT INTO `class_reschedules` (`id`, `course_offering_id`, `original_schedule_id`, `original_date`, `new_date`, `new_start_time`, `new_end_time`, `room_number`, `reason`, `status`, `created_by`, `created_at`, `updated_at`) VALUES
-(1, 34, NULL, '2026-01-21', '2026-01-27', '11:30:00', '11:00:00', '', '', 'active', 4, '2026-01-22 12:35:01', '2026-01-23 16:41:12'),
-(2, 21, NULL, '2026-01-22', '2026-01-26', '13:30:00', '03:30:00', '', '', 'active', 4, '2026-01-22 16:09:19', '2026-01-23 16:34:11');
+INSERT INTO `class_reschedules` (`id`, `reschedule_type`, `routine_assignment_id`, `original_date`, `new_date`, `new_slot_id`, `new_room_id`, `teacher_id`, `reason`, `status`, `created_at`, `updated_at`) VALUES
+(4, 'cancel', 28, '2026-03-01', '2026-03-01', NULL, NULL, 2, '', 'active', '2026-02-24 06:20:13', '2026-02-24 06:20:13'),
+(7, 'reschedule', 37, '2026-03-15', '2026-03-01', 2, 1, 2, '', 'active', '2026-02-24 06:35:20', '2026-02-24 06:35:20'),
+(26, 'reschedule', 22, '2026-03-01', '2026-03-01', 1, 1, 2, NULL, 'active', '2026-02-24 06:49:23', '2026-02-24 06:49:23'),
+(27, 'reschedule', 22, '2026-03-01', '2026-03-01', 2, 1, 2, NULL, 'active', '2026-02-24 06:49:23', '2026-02-24 06:49:23'),
+(28, 'reschedule', 37, '2026-03-01', '2026-02-25', 2, 1, 2, '', 'active', '2026-02-24 06:51:48', '2026-02-24 06:51:48'),
+(29, 'reschedule', 37, '2026-03-01', '2026-02-25', 3, 1, 2, '', 'active', '2026-02-24 06:51:48', '2026-02-24 06:51:48');
 
 -- --------------------------------------------------------
 
@@ -235,106 +301,6 @@ CREATE TABLE `class_schedule` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `class_schedule`
---
-
-INSERT INTO `class_schedule` (`id`, `course_offering_id`, `day_of_week`, `start_time`, `end_time`, `room_number`, `building`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Sunday', '09:00:00', '10:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(2, 2, 'Sunday', '10:30:00', '12:00:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(3, 3, 'Sunday', '12:00:00', '13:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(4, 4, 'Sunday', '14:00:00', '15:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(5, 5, 'Monday', '09:00:00', '10:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(6, 5, 'Monday', '10:30:00', '12:00:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(7, 6, 'Monday', '12:00:00', '13:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(8, 7, 'Monday', '14:00:00', '15:30:00', 'Physics Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(9, 7, 'Monday', '15:30:00', '17:00:00', 'Physics Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(10, 3, 'Tuesday', '09:00:00', '10:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(11, 2, 'Tuesday', '10:30:00', '12:00:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(12, 6, 'Tuesday', '12:00:00', '13:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(13, 8, 'Tuesday', '14:00:00', '15:30:00', 'Chemistry Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(14, 8, 'Tuesday', '15:30:00', '17:00:00', 'Chemistry Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(15, 9, 'Wednesday', '09:00:00', '10:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(16, 9, 'Wednesday', '10:30:00', '12:00:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(17, 4, 'Wednesday', '12:00:00', '13:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(18, 1, 'Wednesday', '14:00:00', '15:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(19, 10, 'Thursday', '09:00:00', '13:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(20, 11, 'Thursday', '14:00:00', '15:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(21, 12, 'Sunday', '09:00:00', '10:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(22, 13, 'Sunday', '10:30:00', '12:00:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(23, 14, 'Sunday', '12:00:00', '13:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(24, 15, 'Monday', '09:00:00', '10:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(25, 16, 'Monday', '10:30:00', '12:00:00', 'DLD Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(26, 16, 'Monday', '12:00:00', '13:30:00', 'DLD Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(27, 17, 'Monday', '14:00:00', '15:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(28, 18, 'Monday', '15:30:00', '17:00:00', 'DLD Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(29, 19, 'Tuesday', '09:00:00', '10:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(30, 19, 'Tuesday', '10:30:00', '12:00:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(31, 20, 'Tuesday', '12:00:00', '13:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(32, 14, 'Tuesday', '14:00:00', '15:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(33, 15, 'Wednesday', '09:00:00', '10:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(34, 13, 'Wednesday', '12:00:00', '13:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(35, 12, 'Wednesday', '14:00:00', '15:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(36, 20, 'Thursday', '09:00:00', '10:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(37, 21, 'Thursday', '10:30:00', '12:00:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(38, 21, 'Thursday', '12:00:00', '13:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(39, 17, 'Thursday', '14:00:00', '15:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(40, 22, 'Sunday', '10:30:00', '12:00:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(41, 22, 'Sunday', '12:00:00', '13:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(42, 23, 'Sunday', '14:00:00', '15:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(43, 24, 'Monday', '12:00:00', '13:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(44, 25, 'Monday', '14:00:00', '15:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(45, 26, 'Tuesday', '14:00:00', '15:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(46, 26, 'Tuesday', '15:30:00', '17:00:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(47, 27, 'Wednesday', '10:30:00', '12:00:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(48, 27, 'Wednesday', '12:00:00', '13:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(49, 25, 'Wednesday', '14:00:00', '15:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(50, 28, 'Wednesday', '15:30:00', '17:00:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(51, 29, 'Thursday', '12:00:00', '13:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(52, 22, 'Thursday', '14:00:00', '15:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(53, 22, 'Thursday', '15:30:00', '17:00:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(54, 30, 'Sunday', '09:00:00', '10:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(55, 31, 'Sunday', '10:30:00', '12:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(56, 32, 'Sunday', '12:00:00', '13:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(57, 33, 'Sunday', '14:00:00', '15:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(58, 33, 'Sunday', '15:30:00', '17:00:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(59, 30, 'Monday', '09:00:00', '10:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(60, 34, 'Monday', '10:30:00', '12:00:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(61, 35, 'Monday', '14:00:00', '15:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(62, 35, 'Monday', '15:30:00', '17:00:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(63, 32, 'Tuesday', '09:00:00', '10:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(64, 36, 'Tuesday', '10:30:00', '12:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(65, 37, 'Tuesday', '12:00:00', '13:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(66, 34, 'Wednesday', '09:00:00', '10:30:00', 'Advanced Programming Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(67, 38, 'Wednesday', '10:30:00', '12:00:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(68, 38, 'Wednesday', '12:00:00', '13:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(69, 39, 'Wednesday', '14:00:00', '15:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(70, 39, 'Wednesday', '15:30:00', '17:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(71, 37, 'Thursday', '09:00:00', '10:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(72, 31, 'Thursday', '10:30:00', '12:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(73, 36, 'Thursday', '12:00:00', '13:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(74, 40, 'Sunday', '09:00:00', '10:30:00', 'Mobile Computing Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(75, 41, 'Sunday', '10:30:00', '12:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(76, 42, 'Monday', '09:00:00', '10:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(77, 42, 'Monday', '10:30:00', '12:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(78, 43, 'Monday', '14:00:00', '15:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(79, 44, 'Tuesday', '14:00:00', '15:30:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(80, 44, 'Tuesday', '15:30:00', '17:00:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(81, 41, 'Wednesday', '12:00:00', '13:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(82, 45, 'Wednesday', '14:00:00', '15:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(83, 46, 'Thursday', '09:00:00', '10:30:00', 'DLD Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(84, 46, 'Thursday', '10:30:00', '12:00:00', 'DLD Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(85, 47, 'Thursday', '12:00:00', '13:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(86, 47, 'Thursday', '14:00:00', '15:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(87, 48, 'Thursday', '15:30:00', '17:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(88, 49, 'Monday', '10:30:00', '12:00:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(89, 49, 'Monday', '12:00:00', '13:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(90, 50, 'Monday', '14:00:00', '15:30:00', 'Mobile Computing Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(91, 50, 'Monday', '15:30:00', '17:00:00', 'Mobile Computing Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(92, 51, 'Tuesday', '10:30:00', '12:00:00', 'Networking Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(93, 52, 'Tuesday', '12:00:00', '13:30:00', 'IoT Lab', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41'),
-(94, 53, 'Thursday', '12:00:00', '13:30:00', 'Room 6613', NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41');
 
 -- --------------------------------------------------------
 
@@ -355,67 +321,68 @@ CREATE TABLE `courses` (
   `status` enum('active','inactive') DEFAULT 'active',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `deleted_at` timestamp NULL DEFAULT NULL
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `default_room_id` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`id`, `department_id`, `course_code`, `course_name`, `credit_hours`, `course_type`, `semester_number`, `description`, `syllabus`, `status`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 'PHY-1105', 'Course PHY-1105', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(2, 1, 'CSE-1101', 'Course CSE-1101', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(3, 1, 'CSE-1103', 'Course CSE-1103', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(4, 1, 'Chem-1107', 'Course Chem-1107', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(5, 1, 'CSE-1102', 'Course CSE-1102', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(6, 1, 'Math-1109', 'Course Math-1109', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(7, 1, 'Phy-1106', 'Course Phy-1106', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(8, 1, 'Chem-1108', 'Course Chem-1108', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(9, 1, 'CSE-1104', 'Course CSE-1104', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(10, 1, 'Competitive Programm', 'Course Competitive Programming', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(11, 1, 'ENG-1108', 'Course ENG-1108', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(12, 1, 'STAT-1211', 'Course STAT-1211', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(13, 1, 'EEE-1205', 'Course EEE-1205', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(14, 1, 'Math-1209', 'Course Math-1209', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(15, 1, 'CSE-1201', 'Course CSE-1201', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(16, 1, 'EEE-1206', 'Course EEE-1206', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(17, 1, 'CSE-1203', 'Course CSE-1203', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(18, 1, 'EEE-1208', 'Course EEE-1208', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(19, 1, 'CSE-1204', 'Course CSE-1204', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(20, 1, 'EEE-1207', 'Course EEE-1207', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(21, 1, 'CSE-1202', 'Course CSE-1202', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(22, 1, 'CSE-2210', 'Course CSE-2210', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(23, 1, 'CSE-2205', 'Course CSE-2205', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(24, 1, 'CSE-2201', 'Course CSE-2201', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(25, 1, 'Math-2211', 'Course Math-2211', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(26, 1, 'CSE-2208', 'Course CSE-2208', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(27, 1, 'CSE-2202', 'Course CSE-2202', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(28, 1, 'CSE-2207', 'Course CSE-2207', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(29, 1, 'CSE-2203', 'Course CSE-2203', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(30, 1, 'CSE-3101', 'Course CSE-3101', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(31, 1, 'Hum-3109', 'Course Hum-3109', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(32, 1, 'CSE-3107', 'Course CSE-3107', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(33, 1, 'CSE-3104', 'Course CSE-3104', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(34, 1, 'CSE-3103', 'Course CSE-3103', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(35, 1, 'EEE-3102', 'Course EEE-3102', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(36, 1, 'Hum-3111', 'Course Hum-3111', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(37, 1, 'CSE-3105', 'Course CSE-3105', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(38, 1, 'CSE-3106', 'Course CSE-3106', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(39, 1, 'CSE-3114', 'Course CSE-3114', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(40, 1, 'CSE-3205', 'Course CSE-3205', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(41, 1, 'CSE-3207', 'Course CSE-3207', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(42, 1, 'CSE-3208', 'Course CSE-3208', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(43, 1, 'CSE-3201', 'Course CSE-3201', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(44, 1, 'CSE-3212', 'Course CSE-3212', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(45, 1, 'CSE-3209', 'Course CSE-3209', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(46, 1, 'CSE-3206', 'Course CSE-3206', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(47, 1, 'CSE-3210', 'Course CSE-3210', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(48, 1, 'CSE-3203', 'Course CSE-3203', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(49, 1, 'CSE-4226', 'Course CSE-4226', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(50, 1, 'CSE-4214', 'Course CSE-4214', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(51, 1, 'CSE-4213', 'Course CSE-4213', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(52, 1, 'CSE-4201', 'Course CSE-4201', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
-(53, 1, 'CSE-4225', 'Course CSE-4225', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL);
+INSERT INTO `courses` (`id`, `department_id`, `course_code`, `course_name`, `credit_hours`, `course_type`, `semester_number`, `description`, `syllabus`, `status`, `created_at`, `updated_at`, `deleted_at`, `default_room_id`) VALUES
+(1, 1, 'PHY-1105', 'Course PHY-1105', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(2, 1, 'CSE-1101', 'Course CSE-1101', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(3, 1, 'CSE-1103', 'Course CSE-1103', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(4, 1, 'Chem-1107', 'Course Chem-1107', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(5, 1, 'CSE-1102', 'Course CSE-1102', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(6, 1, 'Math-1109', 'Course Math-1109', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(7, 1, 'Phy-1106', 'Course Phy-1106', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(8, 1, 'Chem-1108', 'Course Chem-1108', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(9, 1, 'CSE-1104', 'Course CSE-1104', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(10, 1, 'Competitive Programm', 'Course Competitive Programming', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(11, 1, 'ENG-1108', 'Course ENG-1108', 3.0, '', 1, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(12, 1, 'STAT-1211', 'Course STAT-1211', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(13, 1, 'EEE-1205', 'Course EEE-1205', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(14, 1, 'Math-1209', 'Course Math-1209', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(15, 1, 'CSE-1201', 'Course CSE-1201', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(16, 1, 'EEE-1206', 'Course EEE-1206', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(17, 1, 'CSE-1203', 'Course CSE-1203', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(18, 1, 'EEE-1208', 'Course EEE-1208', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(19, 1, 'CSE-1204', 'Course CSE-1204', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(20, 1, 'EEE-1207', 'Course EEE-1207', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(21, 1, 'CSE-1202', 'Course CSE-1202', 3.0, '', 2, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(22, 1, 'CSE-2210', 'Course CSE-2210', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(23, 1, 'CSE-2205', 'Course CSE-2205', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(24, 1, 'CSE-2201', 'Course CSE-2201', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(25, 1, 'Math-2211', 'Course Math-2211', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(26, 1, 'CSE-2208', 'Course CSE-2208', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(27, 1, 'CSE-2202', 'Course CSE-2202', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(28, 1, 'CSE-2207', 'Course CSE-2207', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(29, 1, 'CSE-2203', 'Course CSE-2203', 3.0, '', 4, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(30, 1, 'CSE-3101', 'Course CSE-3101', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(31, 1, 'Hum-3109', 'Course Hum-3109', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(32, 1, 'CSE-3107', 'Course CSE-3107', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(33, 1, 'CSE-3104', 'Course CSE-3104', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(34, 1, 'CSE-3103', 'Course CSE-3103', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(35, 1, 'EEE-3102', 'Course EEE-3102', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(36, 1, 'Hum-3111', 'Course Hum-3111', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(37, 1, 'CSE-3105', 'Course CSE-3105', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(38, 1, 'CSE-3106', 'Course CSE-3106', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(39, 1, 'CSE-3114', 'Course CSE-3114', 3.0, '', 5, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(40, 1, 'CSE-3205', 'Course CSE-3205', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(41, 1, 'CSE-3207', 'Course CSE-3207', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(42, 1, 'CSE-3208', 'Course CSE-3208', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(43, 1, 'CSE-3201', 'Course CSE-3201', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(44, 1, 'CSE-3212', 'Course CSE-3212', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(45, 1, 'CSE-3209', 'Course CSE-3209', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(46, 1, 'CSE-3206', 'Course CSE-3206', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(47, 1, 'CSE-3210', 'Course CSE-3210', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(48, 1, 'CSE-3203', 'Course CSE-3203', 3.0, '', 6, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(49, 1, 'CSE-4226', 'Course CSE-4226', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(50, 1, 'CSE-4214', 'Course CSE-4214', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(51, 1, 'CSE-4213', 'Course CSE-4213', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(52, 1, 'CSE-4201', 'Course CSE-4201', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL),
+(53, 1, 'CSE-4225', 'Course CSE-4225', 3.0, '', 8, NULL, NULL, 'active', '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1147,7 +1114,65 @@ INSERT INTO `login_history` (`id`, `user_id`, `username`, `status`, `failure_rea
 (19, 1, 'superadmin', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-24 08:36:05'),
 (20, NULL, 'msd@academix.bu.ac.bd', 'failed', 'User not found', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-26 06:30:33'),
 (21, NULL, 'msd@academix.bu.ac.bd', 'failed', 'User not found', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-26 06:30:42'),
-(22, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-26 06:31:36');
+(22, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-01-26 06:31:36'),
+(23, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-03 17:58:25'),
+(24, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-03 18:01:17'),
+(25, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-03 19:49:37'),
+(26, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 04:00:47'),
+(27, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 04:15:21'),
+(28, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:10:11'),
+(29, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:44:00'),
+(30, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:44:23'),
+(31, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 05:46:38'),
+(32, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 07:57:56'),
+(33, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 07:58:06'),
+(34, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 07:58:15'),
+(35, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 08:35:31'),
+(36, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 08:37:12'),
+(37, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 08:37:57'),
+(38, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 10:02:10'),
+(39, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 10:02:25'),
+(40, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-04 10:02:47'),
+(41, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 17:05:35'),
+(42, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 17:06:22'),
+(43, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 17:18:48'),
+(44, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 19:15:37'),
+(45, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-08 19:30:10'),
+(46, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-13 18:58:54'),
+(47, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-13 19:08:21'),
+(48, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-14 05:52:01'),
+(49, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-14 06:04:12'),
+(50, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-14 06:23:00'),
+(51, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-14 06:26:24'),
+(52, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-14 06:46:09'),
+(53, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-16 05:42:16'),
+(54, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-16 05:43:15'),
+(55, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36', '2026-02-16 06:02:50'),
+(56, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-17 09:25:38'),
+(57, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-17 09:25:52'),
+(58, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 16:46:19'),
+(59, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 16:46:35'),
+(60, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 16:51:04'),
+(61, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 17:24:29'),
+(62, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 17:28:08'),
+(63, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 18:08:44'),
+(64, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-22 18:09:04'),
+(65, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 15:37:37'),
+(66, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 15:38:38'),
+(67, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 15:40:32'),
+(68, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 16:18:48'),
+(69, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 16:18:58'),
+(70, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 16:24:39'),
+(71, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 17:57:07'),
+(72, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 19:37:03'),
+(73, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 19:43:00'),
+(74, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-23 20:01:11'),
+(75, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 04:54:07'),
+(76, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 04:54:53'),
+(77, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 05:01:38'),
+(78, 3, 'rhf@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 06:18:52'),
+(79, 4, 'msd@academix.edu', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 06:19:48'),
+(80, 13, 'mahmudulhasannoman01@gmail.com', 'success', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36', '2026-02-24 06:20:50');
 
 -- --------------------------------------------------------
 
@@ -1253,7 +1278,701 @@ INSERT INTO `notifications` (`id`, `user_id`, `title`, `message`, `type`, `is_re
 (42, 54, 'Class Rescheduled', 'Your class originally on 2026-01-21 has been rescheduled to 2026-01-27 (11:30 - 11:00). Reason: ', 'alert', 0, '2026-01-23 16:41:12'),
 (43, 55, 'Class Rescheduled', 'Your class originally on 2026-01-21 has been rescheduled to 2026-01-27 (11:30 - 11:00). Reason: ', 'alert', 0, '2026-01-23 16:41:12'),
 (44, 56, 'Class Rescheduled', 'Your class originally on 2026-01-21 has been rescheduled to 2026-01-27 (11:30 - 11:00). Reason: ', 'alert', 0, '2026-01-23 16:41:12'),
-(45, 57, 'Class Rescheduled', 'Your class originally on 2026-01-21 has been rescheduled to 2026-01-27 (11:30 - 11:00). Reason: ', 'alert', 0, '2026-01-23 16:41:12');
+(45, 57, 'Class Rescheduled', 'Your class originally on 2026-01-21 has been rescheduled to 2026-01-27 (11:30 - 11:00). Reason: ', 'alert', 0, '2026-01-23 16:41:12'),
+(46, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 1, '2026-02-04 05:28:55'),
+(47, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(48, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(49, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(50, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(51, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(52, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(53, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(54, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(55, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(56, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(57, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(58, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(59, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(60, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(61, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(62, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(63, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(64, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(65, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(66, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(67, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(68, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(69, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(70, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(71, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(72, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(73, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(74, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(75, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(76, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(77, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(78, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(79, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(80, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(81, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(82, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(83, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(84, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(85, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(86, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(87, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(88, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(89, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(90, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (09:40:00-10:30:00) to Sunday (11:50:00-12:40:00).', 'info', 0, '2026-02-04 05:28:55'),
+(91, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 1, '2026-02-04 05:44:59'),
+(92, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(93, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(94, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(95, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(96, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(97, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(98, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(99, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(100, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(101, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(102, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(103, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(104, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(105, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(106, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(107, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(108, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(109, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(110, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(111, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(112, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(113, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(114, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(115, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(116, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(117, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(118, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(119, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(120, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(121, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(122, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(123, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(124, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(125, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(126, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(127, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(128, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(129, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(130, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(131, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(132, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(133, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(134, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(135, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 05:44:59'),
+(136, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 1, '2026-02-04 05:47:48'),
+(137, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(138, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(139, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(140, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(141, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(142, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(143, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(144, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(145, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(146, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(147, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(148, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(149, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(150, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(151, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(152, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(153, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(154, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(155, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(156, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(157, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(158, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(159, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(160, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(161, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(162, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(163, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(164, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(165, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(166, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(167, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(168, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(169, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(170, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(171, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(172, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(173, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(174, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(175, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(176, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(177, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(178, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(179, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(180, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 05:47:48'),
+(181, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 1, '2026-02-04 08:00:53'),
+(182, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(183, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(184, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(185, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(186, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(187, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(188, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(189, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(190, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(191, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(192, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(193, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(194, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(195, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(196, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(197, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(198, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(199, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(200, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(201, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(202, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(203, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(204, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(205, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(206, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(207, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(208, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(209, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(210, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(211, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(212, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(213, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(214, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(215, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(216, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(217, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(218, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(219, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(220, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(221, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(222, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(223, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(224, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(225, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:00:00-08:50:00) to Sunday (11:00:00-11:50:00).', 'info', 0, '2026-02-04 08:00:53'),
+(226, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 1, '2026-02-04 08:40:21'),
+(227, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(228, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(229, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(230, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(231, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(232, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(233, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(234, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(235, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(236, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(237, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(238, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(239, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(240, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(241, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(242, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(243, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(244, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(245, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(246, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(247, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(248, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(249, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(250, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(251, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(252, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(253, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(254, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(255, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:21'),
+(256, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(257, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(258, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(259, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(260, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(261, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(262, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(263, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(264, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(265, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(266, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(267, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(268, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(269, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(270, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (08:50:00-09:40:00) to Sunday (08:00:00-08:50:00).', 'info', 0, '2026-02-04 08:40:22'),
+(271, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 1, '2026-02-04 08:42:41'),
+(272, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(273, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(274, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(275, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(276, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(277, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(278, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(279, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(280, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(281, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(282, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(283, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(284, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(285, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41');
+INSERT INTO `notifications` (`id`, `user_id`, `title`, `message`, `type`, `is_read`, `created_at`) VALUES
+(286, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(287, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(288, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(289, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(290, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(291, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(292, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(293, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(294, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(295, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(296, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(297, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(298, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(299, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(300, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(301, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(302, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(303, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(304, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(305, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(306, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(307, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(308, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(309, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(310, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(311, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(312, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(313, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(314, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(315, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 has been rescheduled from Sunday (11:00:00-11:50:00) to Sunday (14:00:00-17:00:00).', 'info', 0, '2026-02-04 08:42:41'),
+(316, 8, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-13 19:08:41'),
+(317, 6, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-13 19:08:41'),
+(318, 5, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-13 19:08:41'),
+(319, 7, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-13 19:08:41'),
+(320, 4, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 1, '2026-02-13 19:08:41'),
+(321, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 1, '2026-02-14 06:03:13'),
+(322, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(323, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(324, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(325, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(326, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(327, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(328, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(329, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(330, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(331, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(332, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(333, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(334, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(335, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(336, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(337, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(338, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(339, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(340, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(341, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(342, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(343, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(344, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(345, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(346, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(347, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(348, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(349, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(350, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(351, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(352, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(353, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(354, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(355, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(356, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(357, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(358, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(359, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(360, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(361, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(362, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(363, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(364, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(365, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:50:00-09:40:00).', 'info', 0, '2026-02-14 06:03:13'),
+(366, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 1, '2026-02-14 06:12:21'),
+(367, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(368, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(369, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(370, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(371, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(372, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(373, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(374, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(375, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(376, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(377, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(378, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(379, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(380, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(381, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(382, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(383, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(384, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(385, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(386, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(387, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(388, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(389, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(390, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(391, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(392, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(393, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(394, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(395, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(396, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(397, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(398, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(399, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(400, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(401, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(402, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(403, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(404, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(405, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(406, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(407, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(408, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(409, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(410, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Feb 15, 2026 has been rescheduled to Feb 16, 2026 (08:00:00-08:50:00).', 'info', 0, '2026-02-14 06:12:21'),
+(411, 6, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-23 16:26:23'),
+(412, 4, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 1, '2026-02-23 16:26:23'),
+(413, 8, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-23 16:26:23'),
+(414, 6, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-23 16:35:59'),
+(415, 4, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 1, '2026-02-23 16:35:59'),
+(416, 8, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-23 16:35:59'),
+(417, 6, 'Draft Routine Updated', 'The class routine has been saved as a draft. Please review your schedule and provide feedback if needed.', 'info', 0, '2026-02-23 16:36:50'),
+(418, 4, 'Draft Routine Updated', 'The class routine has been saved as a draft. Please review your schedule and provide feedback if needed.', 'info', 1, '2026-02-23 16:36:50'),
+(419, 8, 'Draft Routine Updated', 'The class routine has been saved as a draft. Please review your schedule and provide feedback if needed.', 'info', 0, '2026-02-23 16:36:50'),
+(420, 6, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-23 16:38:06'),
+(421, 4, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 1, '2026-02-23 16:38:06'),
+(422, 8, 'New Class Routine Published', 'The new class routine has been published. Please check your schedule for the upcoming semester.', 'alert', 0, '2026-02-23 16:38:06'),
+(423, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 1, '2026-02-23 19:45:16'),
+(424, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(425, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(426, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(427, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(428, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(429, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(430, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(431, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(432, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(433, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(434, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(435, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(436, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(437, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(438, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(439, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(440, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(441, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(442, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(443, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(444, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(445, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(446, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(447, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(448, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(449, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(450, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(451, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(452, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(453, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(454, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(455, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(456, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(457, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(458, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(459, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(460, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(461, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(462, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(463, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(464, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(465, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(466, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(467, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Mar 1, 2026 (11:00:00-11:50:00).', 'info', 0, '2026-02-23 19:45:16'),
+(468, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 1, '2026-02-23 19:55:35'),
+(469, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(470, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(471, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(472, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(473, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(474, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(475, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(476, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(477, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(478, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(479, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(480, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(481, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(482, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(483, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(484, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(485, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(486, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(487, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(488, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(489, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(490, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(491, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(492, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(493, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(494, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(495, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(496, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(497, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(498, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(499, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(500, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(501, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(502, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(503, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(504, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(505, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(506, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(507, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(508, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(509, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(510, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(511, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(512, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-23 19:55:35'),
+(513, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(514, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(515, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(516, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(517, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(518, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(519, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(520, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(521, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(522, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(523, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(524, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(525, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(526, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(527, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(528, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(529, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(530, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(531, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(532, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(533, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(534, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(535, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(536, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(537, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(538, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(539, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(540, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(541, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(542, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(543, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(544, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(545, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(546, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(547, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(548, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(549, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(550, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(551, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(552, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(553, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(554, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(555, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(556, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(557, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:50-09:40).', 'info', 0, '2026-02-24 06:27:57'),
+(559, 13, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(560, 14, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(561, 15, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(562, 16, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(563, 17, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(564, 18, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(565, 19, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(566, 20, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(567, 21, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(568, 22, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(569, 23, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(570, 24, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(571, 25, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(572, 26, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(573, 27, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(574, 28, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(575, 29, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(576, 30, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(577, 31, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(578, 32, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(579, 33, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(580, 34, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(581, 35, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(582, 36, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(583, 37, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(584, 38, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(585, 39, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(586, 40, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(587, 41, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(588, 42, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34');
+INSERT INTO `notifications` (`id`, `user_id`, `title`, `message`, `type`, `is_read`, `created_at`) VALUES
+(589, 43, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(590, 44, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(591, 45, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(592, 46, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(593, 47, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(594, 48, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(595, 49, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(596, 50, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(597, 51, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(598, 52, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(599, 53, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(600, 54, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(601, 55, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(602, 56, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(603, 57, 'Class Cancelled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 (08:50-09:40) has been cancelled by Md. Samsuddoha.', 'alert', 0, '2026-02-24 06:32:34'),
+(604, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(605, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(606, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(607, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(608, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(609, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(610, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(611, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(612, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(613, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(614, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(615, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(616, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(617, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(618, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(619, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(620, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(621, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(622, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(623, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(624, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(625, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(626, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(627, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(628, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(629, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(630, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(631, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(632, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(633, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(634, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(635, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(636, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(637, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(638, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(639, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(640, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(641, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(642, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(643, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(644, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(645, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(646, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(647, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(648, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 (08:00-08:50).', 'info', 0, '2026-02-24 06:46:11'),
+(649, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(650, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(651, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(652, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(653, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(654, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(655, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(656, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(657, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(658, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(659, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(660, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(661, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(662, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(663, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(664, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(665, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(666, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(667, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(668, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(669, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(670, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(671, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(672, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(673, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(674, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(675, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(676, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(677, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(678, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(679, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(680, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(681, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(682, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(683, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(684, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(685, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(686, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(687, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(688, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(689, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(690, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(691, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(692, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(693, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 26, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:46:49'),
+(694, 13, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(695, 14, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(696, 15, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(697, 16, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(698, 17, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(699, 18, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(700, 19, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(701, 20, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(702, 21, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(703, 22, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(704, 23, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(705, 24, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(706, 25, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(707, 26, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(708, 27, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(709, 28, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(710, 29, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(711, 30, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(712, 31, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(713, 32, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(714, 33, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(715, 34, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:48'),
+(716, 35, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(717, 36, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(718, 37, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(719, 38, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(720, 39, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(721, 40, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(722, 41, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(723, 42, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(724, 43, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(725, 44, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(726, 45, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(727, 46, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(728, 47, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(729, 48, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(730, 49, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(731, 50, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(732, 51, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(733, 52, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(734, 53, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(735, 54, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(736, 55, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(737, 56, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49'),
+(738, 57, 'Class Rescheduled: CSE-3104', 'Course CSE-3104 on Mar 1, 2026 has been rescheduled to Feb 25, 2026 across 2 time slots: 08:50-09:40, 09:40-10:30.', 'info', 0, '2026-02-24 06:51:49');
 
 -- --------------------------------------------------------
 
@@ -1289,13 +2008,6 @@ CREATE TABLE `reschedule_requests` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `reschedule_requests`
---
-
-INSERT INTO `reschedule_requests` (`id`, `class_id`, `status`, `teacher_message`, `created_at`) VALUES
-(1, 54, 'pending', NULL, '2026-01-23 17:46:11');
-
 -- --------------------------------------------------------
 
 --
@@ -1312,6 +2024,140 @@ CREATE TABLE `reschedule_votes` (
   `reason` text DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rooms`
+--
+
+CREATE TABLE `rooms` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `code` varchar(20) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `building` varchar(100) NOT NULL,
+  `room_type` enum('classroom','lab') NOT NULL DEFAULT 'classroom',
+  `capacity` int(10) UNSIGNED DEFAULT 60,
+  `is_active` tinyint(1) DEFAULT 1,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `rooms`
+--
+
+INSERT INTO `rooms` (`id`, `code`, `name`, `building`, `room_type`, `capacity`, `is_active`, `created_at`, `updated_at`) VALUES
+(1, 'C1', 'Room 6613', 'Academic Building 1', 'classroom', 60, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(2, 'C2', 'Advanced Programming Lab', 'Academic Building 1', 'classroom', 40, 1, '2026-02-03 17:54:19', '2026-02-14 06:49:44'),
+(3, 'C3', 'Networking Lab', 'Academic Building 1', 'classroom', 40, 1, '2026-02-03 17:54:19', '2026-02-14 06:49:44'),
+(4, 'C4', 'IoT Lab', 'Academic Building 2', 'classroom', 30, 1, '2026-02-03 17:54:19', '2026-02-14 06:49:44'),
+(5, 'C5', 'DLD Lab', 'Academic Building 1', 'classroom', 40, 1, '2026-02-03 17:54:19', '2026-02-14 06:49:44'),
+(6, 'C6', 'Mobile Computing Lab', 'Academic Building 1', 'classroom', 40, 1, '2026-02-03 17:54:19', '2026-02-14 06:49:44');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `routine_assignments`
+--
+
+CREATE TABLE `routine_assignments` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `routine_draft_id` int(10) UNSIGNED NOT NULL,
+  `course_offering_id` int(10) UNSIGNED NOT NULL,
+  `slot_id` int(10) UNSIGNED NOT NULL,
+  `room_id` int(10) UNSIGNED NOT NULL,
+  `day_of_week` enum('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday') NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `routine_assignments`
+--
+
+INSERT INTO `routine_assignments` (`id`, `routine_draft_id`, `course_offering_id`, `slot_id`, `room_id`, `day_of_week`, `created_at`, `updated_at`) VALUES
+(22, 1, 28, 1, 1, 'Sunday', '2026-02-04 10:31:06', '2026-02-04 10:31:06'),
+(28, 1, 21, 1, 2, 'Sunday', '2026-02-13 19:11:02', '2026-02-13 19:11:02'),
+(29, 1, 19, 2, 3, 'Sunday', '2026-02-17 09:29:53', '2026-02-17 09:29:53'),
+(32, 1, 50, 1, 4, 'Sunday', '2026-02-22 17:26:11', '2026-02-22 17:26:11'),
+(37, 1, 33, 2, 1, 'Sunday', '2026-02-23 19:44:16', '2026-02-23 19:44:16');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `routine_change_requests`
+--
+
+CREATE TABLE `routine_change_requests` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `routine_assignment_id` int(10) UNSIGNED NOT NULL,
+  `requested_by` int(10) UNSIGNED NOT NULL,
+  `message` text NOT NULL,
+  `status` enum('pending','approved','rejected') NOT NULL DEFAULT 'pending',
+  `admin_response` text DEFAULT NULL,
+  `responded_by` int(10) UNSIGNED DEFAULT NULL,
+  `responded_at` datetime DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `routine_drafts`
+--
+
+CREATE TABLE `routine_drafts` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `semester_id` int(10) UNSIGNED NOT NULL,
+  `department_id` int(10) UNSIGNED NOT NULL,
+  `draft_name` varchar(200) NOT NULL,
+  `status` enum('draft','published','archived') NOT NULL DEFAULT 'draft',
+  `published_at` datetime DEFAULT NULL,
+  `created_by` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `routine_drafts`
+--
+
+INSERT INTO `routine_drafts` (`id`, `semester_id`, `department_id`, `draft_name`, `status`, `published_at`, `created_by`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, 'Routine Draft - 2026-02-03 23:59', 'published', '2026-02-23 22:38:05', 3, '2026-02-03 17:59:09', '2026-02-23 16:38:05');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `routine_slots`
+--
+
+CREATE TABLE `routine_slots` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `start_time` time NOT NULL,
+  `end_time` time NOT NULL,
+  `label` varchar(100) NOT NULL,
+  `slot_type` enum('theory','lab','break') NOT NULL DEFAULT 'theory',
+  `slot_order` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `is_active` tinyint(1) DEFAULT 1,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `routine_slots`
+--
+
+INSERT INTO `routine_slots` (`id`, `start_time`, `end_time`, `label`, `slot_type`, `slot_order`, `is_active`, `created_at`, `updated_at`) VALUES
+(1, '08:00:00', '08:50:00', '1st Period', 'theory', 1, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(2, '08:50:00', '09:40:00', '2nd Period', 'theory', 2, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(3, '09:40:00', '10:30:00', '3rd Period', 'theory', 3, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(4, '10:30:00', '11:00:00', 'Tea Break', 'break', 4, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(5, '11:00:00', '11:50:00', '4th Period', 'theory', 5, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(6, '11:50:00', '12:40:00', '5th Period', 'theory', 6, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(7, '12:40:00', '14:00:00', 'Prayer/Lunch', 'break', 7, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19'),
+(8, '14:00:00', '17:00:00', 'Afternoon Lab', 'lab', 8, 1, '2026-02-03 17:54:19', '2026-02-03 17:54:19');
 
 -- --------------------------------------------------------
 
@@ -1569,7 +2415,7 @@ INSERT INTO `teacher_courses` (`id`, `teacher_id`, `course_offering_id`, `assign
 (65, 6, 51, '2026-01-21 07:54:41'),
 (66, 5, 52, '2026-01-21 07:54:41'),
 (67, 4, 53, '2026-01-21 07:54:41'),
-(68, 2, 33, '2026-01-21 08:00:10');
+(69, 2, 33, '2026-02-04 04:14:07');
 
 -- --------------------------------------------------------
 
@@ -1602,8 +2448,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `status`, `first_login`, `last_login`, `failed_login_attempts`, `locked_until`, `remember_token`, `remember_token_expires`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'superadmin', 'super@academix.edu', '123456', 'super_admin', 'active', 0, '2026-01-24 14:36:05', 0, NULL, NULL, NULL, '2026-01-21 07:47:13', '2026-01-24 08:36:05', NULL),
 (2, 'shahin', 'Yeatasimshahin121@gmail.com', '123456', 'student', 'inactive', 1, NULL, 0, NULL, NULL, NULL, '2026-01-21 07:50:33', '2026-01-22 15:43:14', NULL),
-(3, 'rhf', 'rhf@academix.edu', '123456', 'admin', 'active', 0, '2026-01-23 12:25:53', 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-23 06:25:53', NULL),
-(4, 'msd', 'msd@academix.edu', '123456', 'teacher', 'active', 0, '2026-01-26 12:31:36', 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-26 06:31:36', NULL),
+(3, 'rhf', 'rhf@academix.edu', '123456', 'admin', 'active', 0, '2026-02-24 12:18:52', 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-02-24 06:18:52', NULL),
+(4, 'msd', 'msd@academix.edu', '123456', 'teacher', 'active', 0, '2026-02-24 12:19:48', 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-02-24 06:19:48', NULL),
 (5, 'mmn', 'mmn@academix.edu', '123456', 'teacher', 'active', 1, NULL, 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
 (6, 'raa', 'raa@academix.edu', '123456', 'teacher', 'active', 1, NULL, 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
 (7, 'mma', 'mma@academix.edu', '123456', 'teacher', 'active', 1, NULL, 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
@@ -1612,7 +2458,7 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `status`, `f
 (10, 'sj', 'sj@academix.edu', '123456', 'teacher', 'active', 1, NULL, 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-21 07:54:41', NULL),
 (11, 'mak', 'mak@academix.edu', '123456', 'teacher', 'inactive', 1, NULL, 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-22 15:29:45', NULL),
 (12, 'mhs', 'mhs@academix.edu', '123456', 'teacher', 'inactive', 1, NULL, 0, NULL, NULL, NULL, '2026-01-21 07:54:41', '2026-01-22 15:30:08', NULL),
-(13, '22CSE001', 'mahmudulhasannoman01@gmail.com', '123456', 'student', 'active', 0, '2026-01-24 14:35:24', 0, NULL, NULL, NULL, '2026-01-23 05:48:18', '2026-01-24 08:35:24', NULL),
+(13, '22CSE001', 'mahmudulhasannoman01@gmail.com', '123456', 'student', 'active', 0, '2026-02-24 12:20:50', 0, NULL, NULL, NULL, '2026-01-23 05:48:18', '2026-02-24 06:20:50', NULL),
 (14, '22CSE002', 'rayhankhan.cse9.bu@gmail. com', '123456', 'student', 'active', 1, NULL, 0, NULL, NULL, NULL, '2026-01-23 05:48:18', '2026-01-23 06:02:50', NULL),
 (15, '22CSE003', 'lija.cse9.bu@gmail.com', '123456', 'student', 'active', 1, NULL, 0, NULL, NULL, NULL, '2026-01-23 05:48:18', '2026-01-23 06:02:50', NULL),
 (16, '22CSE004', 'lazmi.cse9.bu@gmail.com', '123456', 'student', 'active', 1, NULL, 0, NULL, NULL, NULL, '2026-01-23 05:48:18', '2026-01-23 06:02:50', NULL),
@@ -1760,13 +2606,6 @@ CREATE TABLE `votes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `votes`
---
-
-INSERT INTO `votes` (`id`, `request_id`, `student_id`, `suggested_date`, `created_at`) VALUES
-(1, 1, 45, '2026-01-23 12:45:00', '2026-01-23 17:46:11');
-
---
 -- Indexes for dumped tables
 --
 
@@ -1830,11 +2669,12 @@ ALTER TABLE `audit_logs`
 --
 ALTER TABLE `class_reschedules`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `original_schedule_id` (`original_schedule_id`),
-  ADD KEY `created_by` (`created_by`),
-  ADD KEY `idx_course_offering_id` (`course_offering_id`),
+  ADD UNIQUE KEY `unique_reschedule` (`routine_assignment_id`,`original_date`,`new_slot_id`),
+  ADD KEY `new_slot_id` (`new_slot_id`),
+  ADD KEY `new_room_id` (`new_room_id`),
+  ADD KEY `teacher_id` (`teacher_id`),
   ADD KEY `idx_original_date` (`original_date`),
-  ADD KEY `idx_new_date` (`new_date`);
+  ADD KEY `idx_new_date_slot` (`new_date`,`new_slot_id`);
 
 --
 -- Indexes for table `class_schedule`
@@ -1852,7 +2692,8 @@ ALTER TABLE `courses`
   ADD UNIQUE KEY `course_code` (`course_code`),
   ADD KEY `idx_department_id` (`department_id`),
   ADD KEY `idx_course_code` (`course_code`),
-  ADD KEY `idx_status` (`status`);
+  ADD KEY `idx_status` (`status`),
+  ADD KEY `default_room_id` (`default_room_id`);
 
 --
 -- Indexes for table `course_materials`
@@ -1983,6 +2824,57 @@ ALTER TABLE `reschedule_votes`
   ADD UNIQUE KEY `unique_vote` (`schedule_id`,`original_date`,`student_id`),
   ADD KEY `student_id` (`student_id`),
   ADD KEY `idx_schedule_date` (`schedule_id`,`original_date`);
+
+--
+-- Indexes for table `rooms`
+--
+ALTER TABLE `rooms`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `code` (`code`),
+  ADD KEY `idx_code` (`code`),
+  ADD KEY `idx_room_type` (`room_type`),
+  ADD KEY `idx_is_active` (`is_active`);
+
+--
+-- Indexes for table `routine_assignments`
+--
+ALTER TABLE `routine_assignments`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `unique_slot_day_draft` (`routine_draft_id`,`slot_id`,`day_of_week`,`room_id`),
+  ADD KEY `room_id` (`room_id`),
+  ADD KEY `idx_routine_draft_id` (`routine_draft_id`),
+  ADD KEY `idx_course_offering_id` (`course_offering_id`),
+  ADD KEY `idx_slot_id` (`slot_id`),
+  ADD KEY `idx_day_of_week` (`day_of_week`);
+
+--
+-- Indexes for table `routine_change_requests`
+--
+ALTER TABLE `routine_change_requests`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `responded_by` (`responded_by`),
+  ADD KEY `idx_routine_assignment_id` (`routine_assignment_id`),
+  ADD KEY `idx_requested_by` (`requested_by`),
+  ADD KEY `idx_status` (`status`);
+
+--
+-- Indexes for table `routine_drafts`
+--
+ALTER TABLE `routine_drafts`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `created_by` (`created_by`),
+  ADD KEY `idx_semester_id` (`semester_id`),
+  ADD KEY `idx_department_id` (`department_id`),
+  ADD KEY `idx_status` (`status`);
+
+--
+-- Indexes for table `routine_slots`
+--
+ALTER TABLE `routine_slots`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idx_slot_order` (`slot_order`),
+  ADD KEY `idx_slot_type` (`slot_type`),
+  ADD KEY `idx_is_active` (`is_active`);
 
 --
 -- Indexes for table `semesters`
@@ -2122,13 +3014,13 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT for table `audit_logs`
 --
 ALTER TABLE `audit_logs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT for table `class_reschedules`
 --
 ALTER TABLE `class_reschedules`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `class_schedule`
@@ -2152,7 +3044,7 @@ ALTER TABLE `course_materials`
 -- AUTO_INCREMENT for table `course_offerings`
 --
 ALTER TABLE `course_offerings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT for table `departments`
@@ -2194,7 +3086,7 @@ ALTER TABLE `grading_scheme`
 -- AUTO_INCREMENT for table `login_history`
 --
 ALTER TABLE `login_history`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `notices`
@@ -2212,7 +3104,7 @@ ALTER TABLE `notice_interactions`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=739;
 
 --
 -- AUTO_INCREMENT for table `notification_preferences`
@@ -2231,6 +3123,36 @@ ALTER TABLE `reschedule_requests`
 --
 ALTER TABLE `reschedule_votes`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `rooms`
+--
+ALTER TABLE `rooms`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `routine_assignments`
+--
+ALTER TABLE `routine_assignments`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT for table `routine_change_requests`
+--
+ALTER TABLE `routine_change_requests`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `routine_drafts`
+--
+ALTER TABLE `routine_drafts`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `routine_slots`
+--
+ALTER TABLE `routine_slots`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `semesters`
@@ -2278,7 +3200,7 @@ ALTER TABLE `teachers`
 -- AUTO_INCREMENT for table `teacher_courses`
 --
 ALTER TABLE `teacher_courses`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -2341,9 +3263,10 @@ ALTER TABLE `audit_logs`
 -- Constraints for table `class_reschedules`
 --
 ALTER TABLE `class_reschedules`
-  ADD CONSTRAINT `class_reschedules_ibfk_1` FOREIGN KEY (`course_offering_id`) REFERENCES `course_offerings` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `class_reschedules_ibfk_2` FOREIGN KEY (`original_schedule_id`) REFERENCES `class_schedule` (`id`) ON DELETE SET NULL,
-  ADD CONSTRAINT `class_reschedules_ibfk_3` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `class_reschedules_ibfk_1` FOREIGN KEY (`routine_assignment_id`) REFERENCES `routine_assignments` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `class_reschedules_ibfk_2` FOREIGN KEY (`new_slot_id`) REFERENCES `routine_slots` (`id`),
+  ADD CONSTRAINT `class_reschedules_ibfk_3` FOREIGN KEY (`new_room_id`) REFERENCES `rooms` (`id`),
+  ADD CONSTRAINT `class_reschedules_ibfk_4` FOREIGN KEY (`teacher_id`) REFERENCES `teachers` (`id`);
 
 --
 -- Constraints for table `class_schedule`
@@ -2355,7 +3278,8 @@ ALTER TABLE `class_schedule`
 -- Constraints for table `courses`
 --
 ALTER TABLE `courses`
-  ADD CONSTRAINT `courses_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `courses_ibfk_1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `courses_ibfk_2` FOREIGN KEY (`default_room_id`) REFERENCES `rooms` (`id`) ON DELETE SET NULL;
 
 --
 -- Constraints for table `course_materials`
@@ -2453,6 +3377,31 @@ ALTER TABLE `reschedule_requests`
 ALTER TABLE `reschedule_votes`
   ADD CONSTRAINT `reschedule_votes_ibfk_1` FOREIGN KEY (`schedule_id`) REFERENCES `class_schedule` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `reschedule_votes_ibfk_2` FOREIGN KEY (`student_id`) REFERENCES `students` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `routine_assignments`
+--
+ALTER TABLE `routine_assignments`
+  ADD CONSTRAINT `routine_assignments_ibfk_1` FOREIGN KEY (`routine_draft_id`) REFERENCES `routine_drafts` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `routine_assignments_ibfk_2` FOREIGN KEY (`course_offering_id`) REFERENCES `course_offerings` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `routine_assignments_ibfk_3` FOREIGN KEY (`slot_id`) REFERENCES `routine_slots` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `routine_assignments_ibfk_4` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `routine_change_requests`
+--
+ALTER TABLE `routine_change_requests`
+  ADD CONSTRAINT `routine_change_requests_ibfk_1` FOREIGN KEY (`routine_assignment_id`) REFERENCES `routine_assignments` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `routine_change_requests_ibfk_2` FOREIGN KEY (`requested_by`) REFERENCES `users` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `routine_change_requests_ibfk_3` FOREIGN KEY (`responded_by`) REFERENCES `users` (`id`) ON DELETE SET NULL;
+
+--
+-- Constraints for table `routine_drafts`
+--
+ALTER TABLE `routine_drafts`
+  ADD CONSTRAINT `routine_drafts_ibfk_1` FOREIGN KEY (`semester_id`) REFERENCES `semesters` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `routine_drafts_ibfk_2` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `routine_drafts_ibfk_3` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `semesters`

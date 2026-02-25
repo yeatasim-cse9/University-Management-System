@@ -26,7 +26,7 @@
 
 ---
 
-## 📋 The Master Plan (100+ Commits)
+## 📋 The Master Plan
 
 When you are ready to code/push, find your name in this list and follow the instructions.
 
