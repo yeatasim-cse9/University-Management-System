@@ -26,7 +26,8 @@
 
 ---
 
-## 📋 The Master Plan 
+## 📋 The Master Plan (100+ Commits)
+
 When you are ready to code/push, find your name in this list and follow the instructions.
 
 ### Phase 1: Project Initialization (Assigned to: **Yeatasim**)
