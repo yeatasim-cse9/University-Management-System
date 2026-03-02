@@ -141,29 +141,17 @@ These manual processes lead to scheduling conflicts, data inconsistencies, delay
 ### 5.1 Architecture Pattern
 Academix follows a **modular monolithic architecture** with a clear separation between:
 
-```
-┌──────────────────────────────────────────────────────┐
-│                     Browser (Client)                  │
-├──────────────────────────────────────────────────────┤
-│                  index.php (Entry Point)              │
-│           Role-based routing to dashboards            │
-├──────────────┬────────────┬──────────┬───────────────┤
-│  Super Admin │   Admin    │ Teacher  │   Student     │
-│   Module     │   Module   │  Module  │   Module      │
-│  (13 pages)  │ (24 pages) │(16 pages)│  (11 pages)   │
-├──────────────┴────────────┴──────────┴───────────────┤
-│               API Layer (RESTful Endpoints)           │
-│     /api/admin/  |  /api/teacher/  |  /api/student/   │
-├──────────────────────────────────────────────────────┤
-│                  Core Includes Layer                  │
-│  auth.php | session.php | functions.php | layouts/    │
-├──────────────────────────────────────────────────────┤
-│              Config Layer (settings + database)       │
-├──────────────────────────────────────────────────────┤
-│              MySQL Database (Academix)                │
-│              30+ tables, InnoDB, utf8mb4              │
-└──────────────────────────────────────────────────────┘
-```
+| Layer                  | Components                                                        | Description                                                  |
+| ---------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
+| **Client (Browser)**   | HTML5, CSS3, JavaScript (ES6+)                                    | User-facing interface rendered in the browser                |
+| **Entry Point**        | `index.php`                                                       | Application entry point with role-based routing to dashboards|
+| **Module Layer**       | Super Admin (13 pages), Admin (24 pages), Teacher (16 pages), Student (11 pages) | Role-specific feature modules with dedicated dashboards      |
+| **API Layer**          | `/api/admin/`, `/api/teacher/`, `/api/student/`                   | RESTful endpoints handling AJAX requests and data operations |
+| **Core Includes**      | `auth.php`, `session.php`, `functions.php`, `layouts/`            | Shared middleware, helpers, and reusable UI components        |
+| **Config Layer**       | `settings.php`, `database.php`                                    | Application constants, environment config, and PDO connection|
+| **Database**           | MySQL (Academix) — 30+ tables, InnoDB, utf8mb4                   | Persistent data storage with relational integrity            |
+
+
 
 ### 5.2 Directory Structure
 
